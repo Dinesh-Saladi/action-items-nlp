@@ -85,10 +85,12 @@ Status: **✅ implemented** · **⚠️ partial** · **❌ not implemented** (ga
 
 ## Still open (highest value first)
 
-1. **Annotation size** (plan: 500–1,000 contexts; here: 261, single annotator) — regenerate
-   candidates from more of the 70 unused meetings and label them with `annotate.py`; add a
-   second annotator and reconcile with `merge_annotations.py` / `kappa.py`. This is the only
-   open item that limits *every* metric.
+1. **Annotation size** (plan: 500–1,000 contexts; labeled: 261, single annotator) — the
+   candidate windows are now **generated**: `data/candidates_expansion.jsonl` adds 330 windows
+   from 8 new meetings → **591 contexts total**, inside the plan's range. What remains is the
+   human part: label them with `annotate.py` (see README "Expanding the annotation set"), and add
+   a second annotator to reconcile with `merge_annotations.py` / `kappa.py`. This is the only open
+   item that limits *every* metric.
 2. **Exact-triplet F1 is gold-phrasing-bound** — e.g. gold `go through that list` cannot be
    produced from a window whose text only says `I'll go through that`. Double annotation +
    a wording convention in the guidelines (or relying on the relaxed metric) is the fix.

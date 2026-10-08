@@ -58,6 +58,8 @@ Useful variants:
 `scikit-learn` is the only hard requirement. `spacy` (action trimming + PERSON NER) and
 `torch`/`transformers` (the `bert` detector) are optional: without them everything still runs,
 the rule-based trimming stays in effect and the `bert` detector is skipped.
+`outputs/bert_model/` (498 MB) is gitignored - recreate it any time with
+`train_bert.py` (~24 min on CPU).
 
 This folder ships the 76 ICSI `.mrt` files in `transcripts/`. To regenerate candidates from other
 meetings, put your ICSI `.mrt` files in `transcripts/` (`transcripts/Bdb001.mrt`, ...). Running
@@ -132,6 +134,24 @@ You can swap in anything as long as the formats match:
   labeling; do NOT use it when measuring agreement (kappa) or building the final gold, because it anchors annotators to the
   pipeline and inflates the pipeline's score.
 * You can also edit the `.jsonl` in any text editor: one JSON object per line; change `person`/`action`/`deadline`.
+
+### Expanding the annotation set (the biggest open gap)
+`data/candidates_expansion.jsonl` holds **330 unlabeled windows from 8 new meetings**
+(Bdb001, Bed003, Bed016, Bmr010, Bmr026, Bns003, Bro010, Bro024 - no ID collides with the existing
+set). Together with the 261 already labeled contexts that is **591 contexts**, inside the plan's
+500-1,000 target. To fold them in:
+
+```bash
+# 1. label the new batch into its own file, so the existing gold is never touched
+.venv/bin/python annotate.py --inp data/candidates_expansion.jsonl --out data/ann_expansion.jsonl
+# 2. concatenate (safe: ids never overlap) and re-run the experiment
+cat data/annotated.jsonl data/ann_expansion.jsonl > data/annotated_all.jsonl
+.venv/bin/python run_all.py --annotated data/annotated_all.jsonl \
+    --test-meetings Bro018 Bmr007 --val-meetings Bmr029
+```
+All 8 new meetings are train/val material - the held-out test meetings (Bmr007, Bro018) do not
+change, so before/after numbers stay comparable. For a second annotator, run `annotate.py` with the
+same `--inp` but a different `--out`, then reconcile with `merge_annotations.py`.
 
 ## 5. Commands in detail
 
@@ -232,7 +252,8 @@ Typical errors (see `outputs/*_errors.csv`, column `failed_stage`):
 1. **The gold here was written by Claude (one annotator)** after reading each window, as a stand-in until you label your own.
    Review `claude_labels.py`; change labels you disagree with and rerun `python apply_labels.py && python run_all.py`.
    A final report should use labels you made, ideally double-annotated (`kappa.py`).
-2. Only 6 of 76 meetings were used and only windows around cue words (+30% random cue-free windows, auto-labeled "not action").
+   330 further windows from 8 new meetings are already generated and waiting: see "Expanding the annotation set" above.
+2. Only 6 of 76 meetings are *labeled*, and only windows around cue words (+30% random cue-free windows, auto-labeled "not action").
    Metrics describe *this sample*, not all of ICSI. Actions without any cue phrase were not sampled.
 3. Real ICSI has few action items and almost no explicit deadlines (2 of 46 positives have one), so deadline accuracy is
    mostly "predict NULL correctly".
