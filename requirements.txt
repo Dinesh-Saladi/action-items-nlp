@@ -1,0 +1,16 @@
+# Minimum to run the rule / tfidf / hybrid detectors and score them
+scikit-learn
+
+# Optional: dependency-based action trimming + PERSON-name NER (plan: POS/dep + NER)
+spacy
+# then: python -m spacy download en_core_web_sm
+
+# Optional: the `bert` detector (CPU wheels shown; remove --index-url if you have a GPU)
+torch
+transformers
+datasets
+accelerate
+
+# Optional: the Streamlit demo (app.py)
+# streamlit
+# pandas

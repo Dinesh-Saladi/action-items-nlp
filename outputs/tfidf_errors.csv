@@ -1,0 +1,39 @@
+id,error_type,failed_stage,gold_person,gold_action,gold_deadline,pred_person,pred_action,pred_deadline
+Bmr007_t12,missed_action_item,detect,NULL,sign the consent form,NULL,,,
+Bmr007_t25,false_positive,detect,,,,NULL,"go, and Right",NULL
+Bmr007_t42,false_positive,detect,,,,fe008,hand these out,NULL
+Bmr007_t143,missed_action_item,detect,mn005,average the duration of the overlaps,NULL,,,
+Bmr007_t414,false_positive,detect,,,,NULL,try to record some two-person meetings or something,NULL
+Bmr007_t434,false_positive,detect,,,,NULL,set up for it,NULL
+Bmr007_t471,wrong_action,action_extract,me011,put the seat number on the next set of forms,NULL,me011,NULL,NULL
+Bmr007_t490,missed_action_item,detect,me011,put little labels with the seat number on all the chairs,NULL,,,
+Bmr007_t529,false_positive,detect,,,,me011,run into the room,NULL
+Bmr007_t720,false_positive,detect,,,,NULL,"try a a meeting or two with the blindfolds, at least of this meeting that we have lots of recordings of",NULL
+Bmr007_t743,wrong_person+action,responsibility_link+action_extract,NULL,work on the human subjects form,NULL,me018,peeking,NULL
+Bmr007_t749,false_positive,detect,,,,me013,NULL,NULL
+Bmr007_t757,false_positive,detect,,,,NULL,mail me the corrections or suggestions for changing I I don't want to make this twice it's length,NULL
+Bmr007_t772,false_positive,detect,,,,mn014,"tell us about all the work you've done on this project in the last, last three months",NULL
+Bmr007_t784,false_positive,detect,,,,NULL,want to just totally excise it,NULL
+Bmr007_t820,false_positive,detect,,,,NULL,NULL,NULL
+Bmr007_t840,false_positive,detect,,,,NULL,done that,NULL
+Bmr007_t855,false_positive,detect,,,,fe016,NULL,NULL
+Bmr007_t868,false_positive,detect,,,,NULL,hand but it,NULL
+Bmr007_t879,missed_action_item,detect,fe008,take a look at the backchannels,NULL,,,
+Bmr007_t883,false_positive,detect,,,,fe016,wear it,NULL
+Bmr007_n665,false_positive,detect,,,,NULL,NULL,NULL
+Bmr007_n197,false_positive,detect,,,,NULL,NULL,NULL
+Bmr007_n337,false_positive,detect,,,,NULL,NULL,NULL
+Bmr007_n384,false_positive,detect,,,,NULL,NULL,NULL
+Bmr007_n298,false_positive,detect,,,,NULL,NULL,NULL
+Bmr007_n374,false_positive,detect,,,,NULL,NULL,NULL
+Bro018_t112,wrong_person+action,responsibility_link+action_extract,fn002,try adding together the probabilities,NULL,NULL,do then,NULL
+Bro018_t120,wrong_person+action,responsibility_link+action_extract,fn002,add up the probabilities,NULL,NULL,show that,NULL
+Bro018_t151,missed_action_item,detect,fn002,study the France Telecom proposal,NULL,,,
+Bro018_t178,missed_action_item,detect,fn002,try moving this parameter in their code,NULL,,,
+Bro018_t234,false_positive,detect,,,,me018,verify that you've chosen features that,NULL
+Bro018_t300,false_positive,detect,,,,me006,show you,NULL
+Bro018_t391,false_positive,detect,,,,NULL,"specify a different number of features different number of filters, I think",NULL
+Bro018_t502,false_positive,detect,,,,me013,"imagine getting that""",NULL
+Bro018_t507,false_positive,detect,,,,me013,run,NULL
+Bro018_n326,false_positive,detect,,,,NULL,do on his class project,NULL
+Bro018_n312,false_positive,detect,,,,NULL,NULL,NULL

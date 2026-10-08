@@ -1,0 +1,131 @@
+{"id": "Bed010_t16", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t29", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t34", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t51", "is_action": true, "person": "me010", "action": "walk you through it", "deadline": "NULL"}
+{"id": "Bed010_t69", "is_action": true, "person": "NULL", "action": "get the demos they need", "deadline": "NULL"}
+{"id": "Bed010_t93", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t109", "is_action": true, "person": "mn015", "action": "show an internal demo", "deadline": "NULL"}
+{"id": "Bed010_t113", "is_action": true, "person": "mn015", "action": "walk through the information", "deadline": "NULL"}
+{"id": "Bed010_t121", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t140", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t145", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t151", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t165", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t171", "is_action": true, "person": "me003", "action": "go back and look at the ones on the list", "deadline": "NULL"}
+{"id": "Bed010_t183", "is_action": true, "person": "mn015", "action": "send a pointer to a Java applet", "deadline": "NULL"}
+{"id": "Bed010_t187", "is_action": true, "person": "mn015", "action": "give the input in terms of the internal structure", "deadline": "NULL"}
+{"id": "Bed010_t194", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t229", "is_action": true, "person": "mn015", "action": "send the transcribed English and German data", "deadline": "NULL"}
+{"id": "Bed010_t240", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t253", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t272", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t282", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t316", "is_action": true, "person": "mn015", "action": "send that link", "deadline": "NULL"}
+{"id": "Bed010_t325", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t332", "is_action": true, "person": "me010", "action": "dig up this reference", "deadline": "NULL"}
+{"id": "Bed010_t336", "is_action": true, "person": "me010", "action": "do this test on you guys", "deadline": "NULL"}
+{"id": "Bed010_t362", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t379", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t414", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t420", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t466", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t478", "is_action": true, "person": "mn036", "action": "send you email", "deadline": "NULL"}
+{"id": "Bed010_t501", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_t522", "is_action": true, "person": "me010", "action": "make a note to do that", "deadline": "NULL"}
+{"id": "Bed010_n87", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_n261", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_n438", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_n456", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_n224", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_n22", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_n130", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_n402", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_n371", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed010_n506", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t9", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t14", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t31", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t35", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t53", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t57", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t67", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t72", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t77", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t118", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t129", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t137", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t141", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t154", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t158", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t218", "is_action": true, "person": "mn059", "action": "go to the Semantic Web Workshop", "deadline": "in two weeks"}
+{"id": "Bed017_t230", "is_action": true, "person": "mn015", "action": "take you to his office", "deadline": "NULL"}
+{"id": "Bed017_t238", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t244", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t248", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_t259", "is_action": true, "person": "mn015", "action": "write up the stuff we discussed at our daily meetings", "deadline": "NULL"}
+{"id": "Bed017_t263", "is_action": true, "person": "mn015", "action": "revise the original construal proposal", "deadline": "NULL"}
+{"id": "Bed017_n46", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_n88", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_n101", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_n173", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_n206", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed017_n223", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t7", "is_action": true, "person": "mn040", "action": "give a very short introduction", "deadline": "NULL"}
+{"id": "Bns002_t15", "is_action": true, "person": "mn082", "action": "give you all a few slides concerning the project proposal", "deadline": "NULL"}
+{"id": "Bns002_t22", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t51", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t73", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t81", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t119", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t141", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t146", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t152", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t165", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t172", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t178", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t193", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t216", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t265", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t280", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t287", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t291", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t298", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t308", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t317", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t323", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t333", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t345", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t349", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t354", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t362", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t370", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t374", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t379", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t387", "is_action": true, "person": "mn021", "action": "provide you some of the proposals", "deadline": "NULL"}
+{"id": "Bns002_t408", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t424", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t453", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t465", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t475", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t479", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t503", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t507", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t512", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t543", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t547", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t556", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t560", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_t569", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_n225", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_n495", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_n242", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_n209", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_n204", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_n237", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_n124", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_n62", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_n56", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_n103", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_n397", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_n538", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns002_n199", "is_action": false, "person": null, "action": null, "deadline": null}
