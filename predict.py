@@ -42,13 +42,24 @@ class BERTDetector:
         path = os.path.join(model_dir, "threshold.json")
         if os.path.exists(path):
             self.threshold = json.load(open(path)).get("threshold", 0.5)
+        # window length MUST match training: bert_tune.py records it in tune_run.json;
+        # models from train_bert.py trained at 128 (the historical default).
+        self.max_length = 128
+        tune = os.path.join(model_dir, "tune_run.json")
+        if os.path.exists(tune):
+            self.max_length = json.load(open(tune)).get("cfg", {}).get(
+                "max_length", self.max_length
+            )
         self.tok = AutoTokenizer.from_pretrained(model_dir)
         self.model = AutoModelForSequenceClassification.from_pretrained(model_dir)
         self.model.eval()
 
     def __call__(self, turns):
         enc = self.tok(
-            bert_text(turns), return_tensors="pt", truncation=True, max_length=128
+            bert_text(turns),
+            return_tensors="pt",
+            truncation=True,
+            max_length=self.max_length,
         )
         with self.torch.no_grad():
             p = float(self.torch.softmax(self.model(**enc).logits, -1)[0][1])

@@ -59,7 +59,9 @@ Useful variants:
 `torch`/`transformers` (the `bert` detector) are optional: without them everything still runs,
 the rule-based trimming stays in effect and the `bert` detector is skipped.
 `outputs/bert_model/` (498 MB) is gitignored - recreate it any time with
-`train_bert.py` (~24 min on CPU).
+`train_bert.py` (~24 min on CPU), or rebuild the shipped **tuned** model with
+`bert_tune.py --run "p1;max_length=256,epochs=15,lr=5e-5,pos_mult=4,seed=0" --threads 6`
+(~110 min; hyperparameters and results in the "How bert was improved" note in the results section).
 
 This folder ships the 76 ICSI `.mrt` files in `transcripts/`. To regenerate candidates from other
 meetings, put your ICSI `.mrt` files in `transcripts/` (`transcripts/Bdb001.mrt`, ...). Running
@@ -204,7 +206,7 @@ For each gold context, the matching prediction is looked up by `id` (no predicti
 | `rule` | regex: first-person commitments ("I'll", "I will", "let me", "I can"...) or directives ("can you", "please", "someone should") |
 | `tfidf` | TF-IDF (1-2 grams) + Logistic Regression trained on the train split; threshold/C picked on the **val** split when `--val-*` is given |
 | `hybrid` | same, plus the rule signals as extra features |
-| `bert` | RoBERTa fine-tuned by `train_bert.py` on the same split (plan's transformer arm); needs `torch` + `transformers` |
+| `bert` | RoBERTa fine-tuned on the same split (plan's transformer arm), `max_length=256` so windows are not truncated; trained by `train_bert.py`, tuned & selected on val by `bert_tune.py` / `bert_ensemble.py`; needs `torch` + `transformers` |
 (Extraction/linking of person, action, deadline is the same rule-based code for all four detectors -
 only the yes/no decision changes. spaCy dependency trimming of the action phrase is used by all of
 them when `spacy` + `en_core_web_sm` are installed; `--no-spacy` turns it off.)
@@ -219,7 +221,7 @@ test = Bmr007 + Bro018 (95 contexts, 15 gold action items).
 | rule | 0.30 | 0.67 | 0.42 | 1.00 / 0.60 / 1.00 | 0.04 | 0.18 / 0.40 / 0.25 |
 | tfidf | 0.24 | 0.60 | 0.35 | 0.67 / 0.56 / 1.00 | 0.04 | 0.14 / 0.33 / 0.19 |
 | hybrid | 0.50 | 0.33 | 0.40 | 1.00 / 0.80 / 1.00 | 0.00 | 0.40 / 0.27 / 0.32 |
-| bert | 0.21 | 0.67 | 0.32 | 0.70 / 0.50 / 1.00 | 0.03 | 0.11 / 0.33 / 0.16 |
+| bert | 0.22 | 0.73 | 0.34 | 0.82 / 0.55 / 1.00 | 0.03 | 0.12 / 0.40 / 0.19 |
 
 Component-level P/R/F1 (report section 4 - each field scored as its own task, precision = correct /
 predicted action items, recall = correct / gold action items):
@@ -229,7 +231,7 @@ predicted action items, recall = correct / gold action items):
 | rule | 0.30 / 0.67 / 0.42 | 0.18 / 0.40 / 0.25 | 0.30 / 0.67 / 0.42 |
 | tfidf | 0.16 / 0.40 / 0.23 | 0.14 / 0.33 / 0.19 | 0.24 / 0.60 / 0.35 |
 | hybrid | 0.50 / 0.33 / 0.40 | 0.40 / 0.27 / 0.32 | 0.50 / 0.33 / 0.40 |
-| bert | 0.15 / 0.47 / 0.23 | 0.11 / 0.33 / 0.16 | 0.21 / 0.67 / 0.32 |
+| bert | 0.18 / 0.60 / 0.28 | 0.12 / 0.40 / 0.19 | 0.22 / 0.73 / 0.34 |
 
 Read these as a *working demo*, not final results: the test set has only 15 positives, so one example moves a metric by ~7 points.
 Notes on what the numbers mean:
@@ -237,9 +239,16 @@ Notes on what the numbers mean:
   (`send me thoughts for an agenda` - the filler cleanup in `_clean_action` removed
   `", you know ,"` and `", yeah that that would be"`). It stays *near* 0 because gold phrases tasks
   differently than people speak ("look to try if I move this parameter..." vs gold "try moving this parameter...").
-* **bert has the best recall (0.67) and the worst precision (0.21)**: 131 training contexts is very
-  little for RoBERTa, and its threshold 0.3 was selected on only 35 validation contexts. Treat it as a
-  working transformer baseline, not a win - that honest comparison is what the plan asked for.
+* **bert has the best recall (0.73) and the worst precision (0.22)**: 131 training contexts is very
+  little for RoBERTa, and its threshold 0.03 was selected on only 35 validation contexts. Treat it as
+  a working transformer baseline, not a win - that honest comparison is what the plan asked for.
+* **How bert was improved (Oct tuning pass, validation-only selection):** the original run
+  truncated **53% of windows at 128 tokens** (mean length 179) and picked its checkpoint by val
+  loss; `bert_tune.py` retrains with `max_length=256`, a fine 0.01 threshold grid and per-epoch
+  val-F1 selection. Three seeds were compared (val F1 0.833 / 0.696 / 0.667 - large seed variance;
+  `bert_ensemble.py` checked averaging, which did not beat the best single). The val-selected winner
+  (seed 0, epoch 3) moved test detection **F1 0.32 -> 0.34, recall 0.67 -> 0.73, relaxed triplet
+  0.16 -> 0.19**. On 15 test positives that is ~1 context per metric: directionally good, still noisy.
 * **hybrid has the best precision (0.50) and the best conditional action accuracy (0.80)**; **rule
   balances both** and is the only detector that needs no training at all.
 Typical errors (see `outputs/*_errors.csv`, column `failed_stage`):

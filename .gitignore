@@ -3,5 +3,6 @@ __pycache__/
 *.pyc
 outputs/*_ckpt/
 outputs/bert_model/
+outputs/bert_tune/
 bert_out/
 data/conflicts.csv
