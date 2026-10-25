@@ -7,12 +7,12 @@ Deck: 8 slides · your part for the last 3 ≈ **2 min + 90 s + 30 s ≈ 3½ min
 | check | verdict |
 |---|---|
 | Slide 6 table numbers (.30/.67/.42 · .24/.60/.35 · .50/.33/.40 · .21/.67/.32) | ✅ match `outputs/*_report.md` exactly |
-| "rule best F1 0.42" / "hybrid best precision 0.50" / "recall tie 0.67" | ✅ correct |
+| "rule best F1 0.42" / "hybrid best precision 0.50" / "BERT best recall 0.73" | ✅ correct |
 | "0.74 → 0.27 cross-turn" · "95 contexts / 15 positives / 6.7 points" · "BERT 131 contexts" | ✅ correct |
 | Slide 7 three tracks vs roadmap | ✅ consistent |
 | Speaker notes already present for all 8 slides | ✅ |
-| **⚠️ Slide 6 text says "Best value in each metric is bold" — but only `0.42` is bold** | ❌ also bold **0.50** (hybrid precision) and **both 0.67** (rule + bert recall) |
-| **⚠️ Slide 7 "Calibrate the threshold"** reads as if it's never been calibrated | ⚠️ it already is (0.30, chosen on validation) — see Q3 below before you say "we will calibrate" |
+| **⚠️ Slide 6 "Best value in each metric is bold"** | ✅ fixed in the pptx: bold = **0.50** (hybrid P) · **0.73** (bert R) · **0.42** (rule F1) |
+| **⚠️ Slide 7 "Calibrate the threshold"** | ✅ reworded in the pptx to "Recalibrate on a larger validation set" — the threshold already comes from validation (now 0.03) — see Q3 below |
 
 ---
 
@@ -25,14 +25,14 @@ Deck: 8 slides · your part for the last 3 ≈ **2 min + 90 s + 30 s ≈ 3½ min
 **2. Read the table — don't read 12 numbers. Three takeaways (30 s):**
 - *"Rule has the best overall F1, 0.42."*
 - *"Hybrid trades recall for precision — 0.50 precision, best in the table."*
-- *"Rule and BERT tie for best recall, 0.67."*
+- *"BERT has the best recall, 0.73 — earned by finding and fixing that 53% of our windows were truncated at 128 tokens."*
 - Punchline: *"So there is no single winner — precision and recall trade off. That's expected with so little data."*
 
 **3. Key finding — the real message (45 s):**
 *"But the more important result isn't in the table. Every prediction records **where** the answer came from. Action accuracy is **0.74** when the task is in the same turn as the commitment, and **0.27** when it has to be borrowed from another turn — think 'I'll do that', where 'that' was said three turns earlier. So detection is not the bottleneck; **cross-turn linking is**. That's what slide 7 targets first."*
 
 **4. BERT bullet — honest, with the fix story (30 s):**
-*"BERT is the weakest overall right now: it ties for best recall but has the lowest precision, 0.21. The cause is known — 131 training contexts is tiny for a transformer. We also hit and fixed a real failure: the first run learned nothing, every probability sat at 0.20 and validation F1 was zero. Balanced batches plus a threshold chosen on validation brought validation F1 to 0.667. The remaining gap is data — track 2."*
+*"BERT improved this month and is now mid-table: best recall of the four, 0.73, but still the lowest precision, 0.22 — 131 training contexts is tiny for a transformer. The fix story in two rounds: the first run learned nothing, every probability sat at 0.20 and validation F1 was zero — balanced batches plus a threshold chosen on validation brought it to 0.667; then we found 53% of our windows were being truncated at 128 tokens, retrained at 256, and validation F1 reached 0.833 with test F1 0.32 to 0.34. The remaining gap is data — track 2."*
 
 **5. If time is short, cut:** the accuracy-baseline and exact-vs-relaxed lines (keep for Q&A — Q1/Q2 below).
 
@@ -52,8 +52,8 @@ Deck: 8 slides · your part for the last 3 ≈ **2 min + 90 s + 30 s ≈ 3½ min
 
 **Track 2 · BERT (25 s):**
 - **Bigger training set** = the root cause (131 is far too little for RoBERTa).
-- **Epoch & LR sweep on validation** → we currently train one configuration (15 epochs, 5e-5); a small grid on validation, the same way tfidf picks its C and threshold.
-- **"Calibrate the threshold"** → ⚠️ say it precisely: *"the threshold is already selected on validation — 0.30 — which is exactly how we fixed the collapse; with a bigger validation set that selection becomes reliable instead of noisy."*
+- **Epoch & LR sweep on validation** → the shipped BERT model already selects epoch + threshold by validation F1; a wider grid on a bigger validation set is next, the same way tfidf picks its C and threshold.
+- **"Recalibrate the threshold"** → ⚠️ say it precisely: *"the threshold is already selected on validation — 0.03 on a fine grid, which is exactly how we fixed the collapse in the first place; with a bigger validation set that selection becomes reliable instead of noisy."*
 - **Target: beat rule's 0.42 F1** — a concrete, checkable goal.
 
 **Track 3 · Pipeline (25 s) — decode the plain-English bullets:**
@@ -77,13 +77,13 @@ Then introduce Q&A by inviting the specific thing you want them to ask: *"I can 
 ## 🔥 Likely questions on these 3 slides
 
 **Q1. "Why keep BERT if the rule detector wins?"**
-*"The goal was a comparison, not a trophy. BERT ties for best recall with zero hand-written patterns, and its weakness has a known cause — 131 contexts. Rule stays the reference because it needs no training data at all."*
+*"The goal was a comparison, not a trophy. BERT now has the best recall with zero hand-written patterns, and its remaining weakness has a known cause — 131 contexts. Rule stays the reference because it needs no training data at all."*
 
 **Q2. "Isn't exact match ~0 a failure?"**
 *"It's mostly a property of the answer key: gold words tasks differently than people speak — gold 'go through that list' vs window 'I'll go through that'. That's why we report relaxed match (word overlap ≥ 0.5) as the main end-to-end metric — and we can hit exact when wording aligns: one case matches literally after filler cleanup."*
 
 **Q3. "Is the BERT threshold calibrated or not?" (slide 7 trap)**
-*"It is — 0.30 was chosen by a grid search on validation, and that's precisely what rescued the first run from validation F1 0.00. What's weak is the 35-context validation set it was chosen on, so recalibration happens once we add validation meetings."*
+*"It is — 0.03 was chosen by a fine grid search on validation, and threshold-on-validation is precisely what rescued the first run from validation F1 0.00. What's weak is the 35-context validation set it was chosen on, so recalibration happens once we add validation meetings."*
 
 **Q4. "How do you know cross-turn is the bottleneck and not a guess?"**
 *"Every prediction carries provenance keys recording which turn each answer came from, and every error row names its failed stage. Pooling all four detectors: 17 of 23 correct when the answer is in the same turn, 3 of 11 when it must come from another turn."*

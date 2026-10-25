@@ -119,13 +119,13 @@ split puts near-duplicates in train and test and inflates scores. Splitting by m
 
 | detector | precision | recall | F1 |
 |---|---|---|---|
-| rule | 0.30 | **0.67** | **0.42** |
+| rule | 0.30 | 0.67 | **0.42** |
 | tfidf | 0.24 | 0.60 | 0.35 |
 | hybrid | **0.50** | 0.33 | 0.40 |
-| bert | 0.21 | **0.67** | 0.32 |
+| bert | 0.22 | **0.73** | 0.34 |
 
 - **Nobody wins outright** — precision and recall trade off between detectors
-- **Action phrase is the weakest field for every detector** (component F1 0.16–0.40)
+- **Action phrase is the weakest field for every detector** (component F1 0.19–0.32)
 - End-to-end: relaxed triplet peaks at **0.40 precision / 0.25 F1** (rule); exact match ≈ 0 → gold wording
   differs from spoken wording (one case *does* match exactly after filler cleanup)
 - Caveat: baseline "always say no" = 0.84 accuracy, 0 F1 — accuracy alone is meaningless here
@@ -136,8 +136,8 @@ split puts near-duplicates in train and test and inflates scores. Splitting by m
 
 "Here are the results, and I want to be careful about how we read them.
 
-On detection — is this window an action item — the rule detector reaches an F1 of 0.42 with the joint-best
-recall of 0.67; the hybrid has the best precision at 0.50; BERT matches the rule detector's recall at 0.67.
+On detection — is this window an action item — the rule detector reaches an F1 of 0.42, the hybrid has
+the best precision at 0.50, and BERT has the best recall of all four, 0.73 (after our truncation fix).
 **No detector wins outright** — precision and recall genuinely trade off between them, and I'd rather show
 you that honestly than cherry-pick one number.
 
@@ -148,7 +148,7 @@ extra hit or miss moves a metric by about 6.7 points. Treat these as indicative,
 
 The second level of scoring breaks each field into its own task — person, action, deadline, each with
 precision, recall and F1. Two results there. **The action phrase is the weakest field for every single
-detector**, ranging only 0.16 to 0.40 F1 — so the bottleneck is *wording the task*, not finding the task.
+detector**, ranging only 0.19 to 0.32 F1 — so the bottleneck is *wording the task*, not finding the task.
 And deadlines score high, but that's mostly predicting NULL correctly: only **two of the 46 positives in the
 whole dataset carry a real deadline**, so I don't put much weight on that number.
 
@@ -159,8 +159,8 @@ through that list*; the window only ever says *I'll go through that*. We did mov
 removing conversational filler made one prediction match the key literally — which tells me exact match is
 constrained by the key's wording consistency as much as by the model."
 
-*If asked "which detector would you deploy?"* → `rule`: it needs no training data, gives the joint-best
-recall and the best exact match; hybrid if you can afford its higher precision at lower recall.
+*If asked "which detector would you deploy?"* → `rule`: it needs no training data and gives the best exact
+match; hybrid if you can afford its higher precision at lower recall.
 
 ---
 
@@ -183,8 +183,9 @@ recall and the best exact match; hybrid if you can afford its higher precision a
 - Errors are stage-labelled: `detect` / `responsibility_link` / `action_extract` / `deadline_link`
 - **Ablations:** validation-tuned threshold (same training data): tfidf F1 **0.12 → 0.35**, hybrid
   **0.33 → 0.42** · spaCy trimming off: exact **0.04 → 0.00**
-- **BERT:** first run collapsed to the class prior (val F1 0.00) → balanced batches + 15 epochs +
-  validation-chosen threshold 0.30 → **val F1 0.667**, best test recall (0.67)
+- **BERT:** first run collapsed (val F1 0.00) → balanced batches + validation-tuned threshold → 0.667;
+  then 53% of windows turned out to be truncated at 128 tokens → retrained with `max_length=256` →
+  **val F1 0.833, test F1 0.32 → 0.34, best recall of the four (0.73)**
 
 *Visual:* the **two-bar comparison 0.74 vs 0.27** — this is the money chart of the whole talk.
 
@@ -223,9 +224,10 @@ which shows that improvement is attributable to the trimming, not to luck.
 Finally, on BERT: our first attempt failed. The model learned nothing — every probability clustered at 0.20
 for both classes, validation F1 of zero, because with a 15% positive class and only 36 optimizer steps it just
 predicted the class prior. We fixed it with balanced batches, more epochs, and choosing the decision threshold
-on validation instead of assuming 0.5 — validation F1 went from **0.00 to 0.667**, and BERT now has the best
-test recall of the four. Its precision is still poor, and that's an honest reflection of 131 training
-contexts."
+on validation instead of assuming 0.5 — validation F1 went from **0.00 to 0.667**. A second round found that
+53% of our windows were being truncated at 128 tokens, so we retrained with longer windows: validation F1
+reached **0.833**, and test recall rose to 0.73, the best of the four detectors. Its precision is still poor,
+and that's an honest reflection of 131 training contexts."
 
 *If asked "is 0.27 just noise at this sample size?"* → n=11 cross-turn cases, so it is small; but the same
 direction appears in every detector individually (0.00–0.33), which is why we treat it as a signal.
@@ -330,13 +332,13 @@ concrete example."
 | Is 95 test contexts enough? | No — 15 positives ≈ 6.7 pts per example; that's why annotation expansion is step 1 |
 | Does the model see the answer key? | No: `input.jsonl` (no labels) → model; `gold.jsonl` → scorer only; no shared meetings |
 | Why not an LLM? | Plan specifies rules+ML+transformer; inspectability lets us attribute every error to a stage |
-| Is BERT a success? | Honest comparison: best recall (0.67), worst precision (0.21) on 131 contexts; also proved validation-threshold selection works |
+| Is BERT a success? | Honest comparison: best recall (0.73), worst precision (0.22) on 131 contexts; every tuning choice was made on validation, never test |
 | Where does gold come from? | One annotator + written guidelines in `HOW_IT_WORKS.md`; double annotation is next |
 | What would you do next? | Label 330 windows → κ → learned linker + wider window + anaphora |
 | Can I reproduce it? | `run_all.py --val-meetings Bmr029 --with-bert` — `--skip-split` reproduces these tables byte-for-byte |
 
 **Numbers used above (all verified against the repo):** split 131/35/95 (20/11/15 positives) · detection
-P/R/F1 rule .30/.67/.42, tfidf .24/.60/.35, hybrid .50/.33/.40, bert .21/.67/.32 · relaxed F1 .25/.19/.32/.16 ·
+P/R/F1 rule .30/.67/.42, tfidf .24/.60/.35, hybrid .50/.33/.40, bert .22/.73/.34 · relaxed F1 .25/.19/.32/.19 ·
 exact F1 .04/.04/.00/.03 · pooled same-vs-cross-turn action 0.74 (17/23) vs 0.27 (3/11), person 0.87 vs 0.73 ·
-ablations tfidf .12→.35, hybrid .33→.42, rule exact .00→.04 · BERT val F1 0.00→0.667 (threshold 0.30) ·
+ablations tfidf .12→.35, hybrid .33→.42, rule exact .00→.04 · BERT val F1 0.00→0.667→0.833 (max_length 256; test F1 0.32→0.34) ·
 data 261 labeled + 330 pending = 591 · 14 files / 1,713 lines.

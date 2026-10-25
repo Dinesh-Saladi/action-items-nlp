@@ -75,13 +75,13 @@ Each block: **Title** = slide heading · bullets/tables = slide body · **Worth 
 | **rule** | regex: commitments (`I'll, let me`) minus hedges (`I can imagine`) + directives (`please, can you`); questions skipped | none | hand-written patterns |
 | **tfidf** | TF-IDF 1–2 grams + class-balanced Logistic Regression | 131 contexts | grid on **val**: C × threshold (20 combos) |
 | **hybrid** | tfidf **+ rule flags as extra tokens** (`RULECOMMIT`, `RULEDIRECTIVE`, `RULERULEDET`) | 131 contexts | grid on **val** |
-| **bert** | RoBERTa fine-tuned for the yes/no decision | 131 contexts + pretrained LM | 15 epochs, positives ×4 oversample, checkpoint by val loss, threshold **0.30** chosen on val |
+| **bert** | RoBERTa fine-tuned for the yes/no decision | 131 contexts + pretrained LM | positives ×4 oversample, max_length 256, checkpoint by val F1, threshold **0.03** chosen on val |
 
 - **Leak-free protocol:** split **by meeting** → 131 train / **35 validation** / 95 test
   (validation picks thresholds & C — **test gold is never touched**)
 - Rule detector = **cold-start fallback** (needs zero data); hybrid tests *"rules + ML > either alone"*
 
-*Worth mentioning:* first BERT run **collapsed to the class prior** (all probabilities ≈0.20, val F1 0.00) because 15% positives + only 36 optimizer steps — fixed by balanced batches + validation-chosen threshold (val F1 → 0.667). Good example of *why the validation split exists*.
+*Worth mentioning:* first BERT run **collapsed to the class prior** (all probabilities ≈0.20, val F1 0.00) because 15% positives + only 36 optimizer steps — fixed by balanced batches + validation-chosen threshold (val F1 → 0.667); a later round found 53% of windows truncated at 128 tokens → max_length 256 → val F1 → 0.833. Good example of *why the validation split exists*.
 
 🎤 *Note:* "Three lightweight arms and one transformer, all answering the identical question with the same downstream code. The threshold isn't assumed to be 0.5 — it's selected on validation, which turned out to matter a lot."
 
@@ -96,17 +96,18 @@ Each block: **Title** = slide heading · bullets/tables = slide body · **Worth 
 | rule | 0.30 / **0.67** / **0.42** | **0.25** | **0.04** |
 | tfidf | 0.24 / 0.60 / 0.35 | 0.19 | **0.04** |
 | hybrid | **0.50** / 0.33 / 0.40 | **0.32** | 0.00 |
-| bert | 0.21 / **0.67** / 0.32 | 0.16 | 0.03 |
+| bert | 0.22 / **0.73** / 0.34 | 0.19 | 0.03 |
 
-- **No winner:** rule = best F1, hybrid = best precision, tied best recall — precision/recall trade off
+- **No winner:** rule = best F1, hybrid = best precision, bert = best recall — precision/recall trade off
 - **Key finding — cross-turn linking is the bottleneck:** action-phrase accuracy **0.74 same-turn → 0.27 cross-turn** (`"I'll do that"` → what is "that"?) — detection is *not* the ceiling (oracle: 14/15 detectable)
-- Component scores: action phrase is the weakest field for **every** detector (F1 0.16–0.32)
-- **BERT: not functioning well yet** — ties for best recall but lowest precision (0.21) and lowest relaxed F1 (0.16); diagnosis done, performance pending
-  - **TODO:** more training data (only 131 contexts) · hyperparameter/epoch tuning · larger backbone or GPU · calibrate threshold on a bigger validation set
+- Component scores: action phrase is the weakest field for **every** detector (F1 0.19–0.32)
+- **BERT: improved, still precision-limited** — truncation fix (53% of windows cut at 128 tokens → `max_length=256`) + val-only tuning lifted test F1 **0.32 → 0.34**, recall **0.67 → 0.73 (best of all four)**, relaxed triplet **0.16 → 0.19**; precision still lowest (0.22)
+  - **Done:** truncation fix · threshold re-tuned on validation (0.30 → 0.03, fine grid) · 3 seeds + probability ensembling checked
+  - **TODO:** more training data (only 131 contexts) · epoch/LR sweep on a bigger validation set · larger backbone or GPU
 
 *Worth mentioning:* baseline "always say no" = 0.84 accuracy / 0 F1 → that's why we report F1, not accuracy. Exact ≈ 0 is gold-wording-bound, not a crash (one case matches exactly after filler cleanup).
 
-🎤 *Note:* "Honest headline: the simple rule detector still holds the best F1, and BERT is the weakest overall — we'll say that plainly. The interesting result isn't the leaderboard, it's *where* errors happen: borrowing an action from another turn."
+🎤 *Note:* "Honest headline: the simple rule detector still holds the best F1, and BERT has the best recall but the worst precision — we'll say that plainly. The interesting result isn't the leaderboard, it's *where* errors happen: borrowing an action from another turn."
 
 ---
 
@@ -122,9 +123,9 @@ Each block: **Title** = slide heading · bullets/tables = slide body · **Worth 
 
 **2. BERT proper functionality**
 - Root-cause precision collapse: 131 contexts is far too little data for RoBERTa
-- Bigger training set (track 1) + epoch/LR sweep on validation + calibrated threshold
-- Consider stronger backbone, class weights, or **ensemble with rules** (quick win measured: majority-vote of detectors lifts relaxed F1 0.32 → 0.34 with zero new data)
-- **TODO (tracked):** `predict.py --detector bert` metrics currently below rule/hybrid — target: beat rule's 0.42 F1
+- Bigger training set (track 1) + epoch/LR sweep on validation (threshold already recalibrated: 0.03, chosen on validation)
+- Consider stronger backbone, class weights, or **ensemble with rules** (quick win measured: majority-vote of detectors lifts relaxed F1 0.32 → 0.35 with zero new data)
+- **TODO (tracked):** `predict.py --detector bert` improved 0.32 → 0.34 but still below rule/hybrid — target: beat rule's 0.42 F1
 
 **3. Pipeline refinements**
 - **Wider window ±2 → ±4 + anaphora resolution** — directly targets the 0.74 → 0.27 cross-turn drop
@@ -142,5 +143,5 @@ Each block: **Title** = slide heading · bullets/tables = slide body · **Worth 
 - Detection P/R/F1: rule .30/.67/.42 · tfidf .24/.60/.35 · hybrid .50/.33/.40 · bert .21/.67/.32
 - Relaxed F1: .25 / .19 / .32 / .16 · Exact F1: .04 / .04 / .00 / .03
 - Cross-turn action: 0.74 (17/23) same-turn vs 0.27 (3/11) cross-turn · oracle detection 14/15
-- BERT: first run val F1 0.00 (probs ≈0.20) → fixed (×4 oversample, 15 epochs, threshold 0.30) → val F1 0.667, test P .21 / R .67
+- BERT: first run val F1 0.00 (probs ≈0.20) → fixed (×4 oversample, threshold on val) → 0.667 → truncation fix (max_length 256) → 0.833; test P .22 / R .73 / F1 .34
 - Ensemble measured on existing predictions: majority≥3 → relaxed F1 .34 (best single .32), rule∧hybrid → detection P .56

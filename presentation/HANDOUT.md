@@ -32,12 +32,12 @@ collected with NER (informational — gold uses speaker IDs).
 
 | detector | det P / R / F1 | exact F1 | relaxed P / R / F1 |
 |---|---|---|---|
-| rule | 0.30 / **0.67** / **0.42** | **0.04** | 0.18 / 0.40 / **0.25** |
+| rule | 0.30 / 0.67 / **0.42** | **0.04** | 0.18 / 0.40 / **0.25** |
 | tfidf | 0.24 / 0.60 / 0.35 | **0.04** | 0.14 / 0.33 / 0.19 |
 | hybrid | **0.50** / 0.33 / 0.40 | 0.00 | **0.40** / 0.27 / 0.32 |
-| bert | 0.21 / **0.67** / 0.32 | 0.03 | 0.11 / 0.33 / 0.16 |
+| bert | 0.22 / **0.73** / 0.34 | 0.03 | 0.12 / 0.40 / 0.19 |
 
-Component P/R/F1 (report §4): action phrase is the weakest field for **every** detector (0.16–0.40 F1);
+Component P/R/F1 (report §4): action phrase is the weakest field for **every** detector (0.19–0.32 F1);
 deadline scores high only because 44 of 46 positives have `NULL`.
 
 ### Key finding
@@ -55,7 +55,7 @@ Splitting every answer by *where it came from* (report §5):
 ### Ablations
 - Validation-tuned threshold (same training data): tfidf F1 **0.12 → 0.35**, hybrid **0.33 → 0.42**
 - spaCy trimming off: exact triplet F1 **0.04 → 0.00** (relaxed unchanged) → attributable, not luck
-- BERT first run collapsed to the class prior (val F1 0.00) → balanced batches + 15 epochs + validation-chosen threshold 0.30 → **val F1 0.667**, best test recall (0.67)
+- BERT: collapse fixed (balanced batches + validation-tuned threshold → val F1 0.667), then 53% of windows found truncated at 128 tokens → `max_length=256` → **val F1 0.833**, test F1 0.32 → 0.34, best recall (0.73)
 
 ### Plan status
 ✅ 4 detectors compared (incl. transformer) · ✅ component P/R/F1 · ✅ linking measured separately ·

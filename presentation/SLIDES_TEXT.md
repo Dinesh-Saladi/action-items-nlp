@@ -47,14 +47,14 @@ Tables are marked `[TABLE]` — recreate them with Insert → Table (values show
 
 | detector | precision | recall | F1 |
 |---|---|---|---|
-| rule | 0.30 | **0.67** | **0.42** |
+| rule | 0.30 | 0.67 | **0.42** |
 | tfidf | 0.24 | 0.60 | 0.35 |
 | hybrid | **0.50** | 0.33 | 0.40 |
-| bert | 0.21 | **0.67** | 0.32 |
+| bert | 0.22 | **0.73** | 0.34 |
 
 - **Nobody wins outright** — precision/recall trade off between detectors
 - Baseline "always say no" = 0.84 accuracy, 0 F1 → why we score P/R/F1, not accuracy
-- Component scores: **action phrase is the weakest field for every detector** (F1 0.16–0.40)
+- Component scores: **action phrase is the weakest field for every detector** (F1 0.19–0.32)
 - End-to-end triplet: relaxed match peaks at **0.40 P / 0.25 F1** (rule)
 - Exact match ≈ 0 → gold words tasks differently than speech (one case matches exactly after filler cleanup)
 - ⚠ test has only 15 positives → 1 example ≈ 6.7 points
@@ -78,8 +78,9 @@ Tables are marked `[TABLE]` — recreate them with Insert → Table (values show
 - Every error is labelled with its failed stage: detect / responsibility link / action extract / deadline link
 - **Ablation — validation-tuned threshold** (same training data): tfidf F1 **0.12 → 0.35**, hybrid **0.33 → 0.42**
 - **Ablation — spaCy trimming off:** exact triplet **0.04 → 0.00** → improvements are attributable
-- **BERT:** first run collapsed to class prior (val F1 0.00) → balanced batches + 15 epochs +
-  validation-chosen threshold 0.30 → **val F1 0.667**, best test recall (0.67)
+- **BERT:** collapse fixed (balanced batches + val-tuned threshold → val F1 0.667), then 53% of
+  windows found truncated at 128 tokens → max_length 256 → **val F1 0.833, test F1 0.32 → 0.34,
+  best recall of all four (0.73)**
 
 ---
 

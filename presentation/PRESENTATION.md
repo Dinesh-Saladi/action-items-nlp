@@ -164,10 +164,10 @@
 
 | detector | precision | recall | F1 |
 |---|---|---|---|
-| **rule** | 0.30 | **0.67** | **0.42** |
+| **rule** | 0.30 | 0.67 | **0.42** |
 | tfidf | 0.24 | 0.60 | 0.35 |
 | **hybrid** | **0.50** | 0.33 | 0.40 |
-| bert | 0.21 | **0.67** | 0.32 |
+| bert | 0.22 | **0.73** | 0.34 |
 
 - Test = 95 contexts, **15** gold action items → one example ≈ 6.7 F1 points
 - Baseline "always predict no action item" = 0.84 accuracy, 0 F1
@@ -186,7 +186,7 @@
 | rule | 0.30 / 0.67 / **0.42** | 0.18 / 0.40 / **0.25** | 0.30 / 0.67 / 0.42 |
 | tfidf | 0.16 / 0.40 / 0.23 | 0.14 / 0.33 / 0.19 | 0.24 / 0.60 / 0.35 |
 | hybrid | **0.50** / 0.33 / 0.40 | **0.40** / 0.27 / 0.32 | **0.50** / 0.33 / 0.40 |
-| bert | 0.15 / 0.47 / 0.23 | 0.11 / 0.33 / 0.16 | 0.21 / 0.67 / 0.32 |
+| bert | 0.18 / 0.60 / 0.28 | 0.12 / 0.40 / 0.19 | 0.22 / 0.73 / 0.34 |
 
 - Action phrase F1 is the lowest row for **every** detector → phrasing, not detection, is the bottleneck
 - Deadline "success" is mostly *predicting NULL correctly* (only 2 of 46 positives have a real deadline)
@@ -204,7 +204,7 @@
 | rule | **0.04** | 0.18 / 0.40 / **0.25** |
 | tfidf | **0.04** | 0.14 / 0.33 / 0.19 |
 | hybrid | 0.00 | **0.40** / 0.27 / 0.32 |
-| bert | 0.03 | 0.11 / 0.33 / 0.16 |
+| bert | 0.03 | 0.12 / 0.40 / 0.19 |
 
 - Exact match went **0.00 → 0.04** this pass: filler cleanup made `Bmr007_t845` match literally
   (`send me thoughts for an agenda`, previously `send me , you know , thoughts for an agenda , yeah …`)
@@ -299,10 +299,14 @@ Accuracy of each field, pooled over all 4 detectors, split by where the answer w
 - Diagnosis: 15 % positive class + only 36 optimizer steps → the model just predicts the class prior
 - **Fixes**: repeat positives ×4 (balanced batches), 15 epochs @ 5e-5, checkpoint by validation loss,
   and pick the **decision threshold on validation** (0.30) instead of assuming 0.5
-- **Result**: validation F1 **0.667** (P 0.70 / R 0.64); test recall **0.67** — best recall of all four
-- Caveat honestly: test precision 0.21 → 131 contexts is very little data for RoBERTa
+- **Result of round 1**: validation F1 **0.00 → 0.667** (P 0.70 / R 0.64)
+- **Round 2 — the truncation fix:** 53% of the training windows were cut off at 128 tokens
+  (mean window length 179) → retrain with `max_length=256` + per-epoch validation-F1 selection
+  (3 seeds compared) → validation F1 **0.833**, test **F1 0.32 → 0.34, recall 0.67 → 0.73 —
+  the best recall of all four detectors**
+- Caveat honestly: test precision 0.22 is still the worst → 131 contexts is very little data for RoBERTa
 
-*Visual:* two dots on a line "val F1: 0.00 → 0.667", with the 3 fixes as bullets.
+*Visual:* the validation-F1 ladder "0.00 → 0.667 → 0.833", with each fix as a bullet.
 
 ---
 
@@ -419,11 +423,12 @@ separate *extraction* (answer in the task turn) from *linking* (answer pulled fr
 
 ### Numbers used in this deck (all verified against the repo)
 - Split: 131 train / 35 val / 95 test · positives 20 / 11 / 15
-- Detection P/R/F1: rule .30/.67/.42 · tfidf .24/.60/.35 · hybrid .50/.33/.40 · bert .21/.67/.32
+- Detection P/R/F1: rule .30/.67/.42 · tfidf .24/.60/.35 · hybrid .50/.33/.40 · bert .22/.73/.34
 - Exact F1: rule .04 · tfidf .04 · hybrid .00 · bert .03
-- Relaxed P/R/F1: rule .18/.40/.25 · tfidf .14/.33/.19 · hybrid .40/.27/.32 · bert .11/.33/.16
+- Relaxed P/R/F1: rule .18/.40/.25 · tfidf .14/.33/.19 · hybrid .40/.27/.32 · bert .12/.40/.19
 - Pooled extraction vs linking: action 0.74 (17/23) vs 0.27 (3/11) · person 0.87 (20/23) vs 0.73 (8/11)
 - Ablations: tfidf 0.12 → 0.35, hybrid 0.33 → 0.42 (threshold) · rule exact 0.00 → 0.04 (spaCy)
-- BERT: val F1 0.00 → 0.667 after balanced sampling + val-tuned threshold 0.30
+- BERT: val F1 0.00 → 0.667 (balanced batches + val-tuned threshold) → 0.833 after fixing
+  53% window truncation (max_length 256); test F1 0.32 → 0.34
 - Data: 76 transcripts · 261 labeled (46 positives, 6 meetings) · 330 pending (8 meetings) · 591 total
 - Code: 14 files, 1,713 lines · 2 git commits, 119 files

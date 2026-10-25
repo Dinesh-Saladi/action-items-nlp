@@ -72,8 +72,9 @@ Status: **✅ implemented** · **⚠️ partial** · **❌ not implemented** (ga
    validation split, loaded by `predict.py --detector bert`, scored by `score.py`, shown in the
    `run_all.py` table (`--with-bert`). Its first training run collapsed to the class prior
    (all probabilities ≈ 0.20, val F1 = 0.00); fixed with positive oversampling (`--pos-mult`),
-   15 epochs and a **validation-selected threshold** (0.30) → val F1 0.667, test detection
-   P 0.21 / R 0.67 / F1 0.32.
+   15 epochs and a **validation-selected threshold** → val F1 0.667; a later `bert_tune.py` pass
+   found 53% of windows truncated at 128 tokens and retrained with `max_length=256` +
+   per-epoch val-F1 selection (3 seeds) → val F1 0.833, test detection P 0.22 / R 0.73 / F1 0.34.
 2. **Component-level evaluation** — `score.py` §4 gives P/R/F1 for person/action/deadline;
    §5 separates plain extraction from cross-turn linking; errors name the failed stage.
 3. **Validation split** — `make_dataset.py --val-meetings`, used for threshold/C selection.

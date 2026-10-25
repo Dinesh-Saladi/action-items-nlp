@@ -63,7 +63,7 @@ exact and relaxed triplet scores, and a per-example error file that names the st
 one is beyond the plan — we don't just know we're wrong, we know where.**
 
 **Slide 10 — Detection results** ✓
-Detection: rule gets 0.42 F1 with the best recall alongside BERT; hybrid has the best precision at 0.50.
+Detection: rule gets 0.42 F1, hybrid the best precision at 0.50, BERT the best recall at 0.73 after our tuning pass.
 **Nobody wins outright — precision and recall trade off between detectors.** And keep in mind the test set has
 only 15 positives, so one example moves a metric by about 6.7 points. The trivial always-say-no baseline
 scores 0.84 accuracy and zero F1, which is exactly why we report F1 and not accuracy.
@@ -108,9 +108,10 @@ commits, clean tree, and re-running the pipeline reproduces the tables byte for 
 I want to be transparent about a failure. The first BERT run learned nothing — every probability clustered at
 0.20 for both classes, validation F1 of zero. Cause: a 15% positive class and only 36 optimizer steps, so it
 just predicted the class prior. **We fixed it with balanced batches, more epochs, and picking the decision
-threshold on validation instead of assuming 0.5 — validation F1 went from 0.00 to 0.667.** On test it has the
-best recall of all four detectors, 0.67, at the cost of precision: 131 contexts is very little data for a
-transformer.
+threshold on validation instead of assuming 0.5 — validation F1 went from 0.00 to 0.667.** A second round
+found that 53% of windows were truncated at 128 tokens; retraining at 256 pushed validation F1 to 0.833 and
+test recall to 0.73, the best of all four detectors — at the cost of precision, because 131 contexts is very
+little data for a transformer.
 
 **Slide 18 — Ablations**
 Two controlled checks. Same training data, only the decision threshold changes: TF-IDF goes from 0.12 to 0.35
