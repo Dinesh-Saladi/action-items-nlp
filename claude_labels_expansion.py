@@ -124,6 +124,14 @@ LABELS = {
     "Bmr006_t383": ("me011", "archive it and delete the files", "NULL"),
     "Bmr006_t682": ("mn005", "include the differential derivatives", "NULL"),
     "Bmr006_t687": ("me013", "take just a few features", "NULL"),
+    # ---- Bmr008
+    "Bmr008_t1163": ("mn005", "think about it", "NULL"),
+    "Bmr008_t120": ("me011", "repeat the categories", "NULL"),
+    "Bmr008_t29": ("me011", "have any comments on the speaker form", "NULL"),
+    "Bmr008_t34": ("fe008", "insert that (status)", "NULL"),
+    "Bmr008_t48": ("me011", "write something like 'position'", "NULL"),
+    "Bmr008_t630": ("me011", "fiddle around with the language stuff", "NULL"),
+    "Bmr008_t883": ("me011", "send an email and ask if he received it", "NULL"),
     # ---- Bmr010
     "Bmr010_t16": ("fe008", "give an update on the transcription effort and raise the microphone cleanliness issue", "NULL"),
     "Bmr010_t205": ("me013", "ping them about the format", "NULL"),

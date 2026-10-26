@@ -2,25 +2,28 @@
 
 ## What was labeled
 
-`data/candidates_expansion.jsonl` contains 1151 cue-centered windows from 24 meetings that are
+`data/candidates_expansion.jsonl` contains 2650 cue-centered windows from 64 meetings that are
 **not** used in the original 261-context set: Bdb001, Bed002, Bed003, Bed004, Bed005, Bed006,
 Bed008, Bed009, Bed011, Bed012, Bed013, Bed014, Bed015, Bed016, Bmr001, Bmr002, Bmr003,
-Bmr005, Bmr006, Bmr010, Bmr026, Bns003, Bro010, Bro024. No context ID overlaps with
-`data/candidates.jsonl`.
+Bmr005, Bmr006, Bmr008, Bmr009, Bmr010, Bmr011, Bmr012, Bmr013, Bmr014, Bmr015, Bmr016,
+Bmr018, Bmr019, Bmr020, Bmr021, Bmr022, Bmr023, Bmr024, Bmr025, Bmr026, Bmr027, Bmr028,
+Bmr030, Bmr031, Bns001, Bns003, Bro003, Bro004, Bro005, Bro007, Bro008, Bro010, Bro011,
+Bro012, Bro013, Bro014, Bro015, Bro016, Bro017, Bro019, Bro021, Bro022, Bro023, Bro024,
+Bro025, Bro026, Bro027. No context ID overlaps with `data/candidates.jsonl`.
 
 The labels were written by the AI assistant (Claude) after reading each window, using the same
 guidelines as `claude_labels.py` (see `HOW_IT_WORKS.md`, "Annotation guidelines"). Reviewable
 table: `claude_labels_expansion.py`.
 
-* 1151 contexts
-* **123 action items** (~14%, comparable to 46/261 in the original set)
+* 2650 contexts
+* **130 action items** (~14%, comparable to 46/261 in the original set)
 * 6 deadlines (`in about an hour`, `Friday afternoon`, `the next day`, `in about one hour`,
   `next Monday`, `next Monday`)
 
 Generated files:
 
-* `data/annotated_expansion.jsonl` - all 1151 rows with labels
-* `data/ann_A.jsonl`, `data/ann_B.jsonl`, `data/ann_C.jsonl` - the same 1151 rows
+* `data/annotated_expansion.jsonl` - all 2650 rows with labels
+* `data/ann_A.jsonl`, `data/ann_B.jsonl`, `data/ann_C.jsonl` - the same 2650 rows
 
 ## The three sheets are copies, not independent annotations
 
@@ -28,7 +31,7 @@ All three annotation sheets contain **the same labels**. `kappa.py` and `merge_a
 therefore report **kappa = 1.000** for every pair and for Fleiss' kappa. That number is an artefact
 of construction and must **not** be reported as inter-annotator agreement.
 
-To restore blank 1151-row templates, run:
+To restore blank 2650-row templates, run:
 
 ```bash
 .venv/bin/python - <<'PY'

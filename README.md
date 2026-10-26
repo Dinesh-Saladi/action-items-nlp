@@ -138,23 +138,27 @@ You can swap in anything as long as the formats match:
 * You can also edit the `.jsonl` in any text editor: one JSON object per line; change `person`/`action`/`deadline`.
 
 ### Expanding the annotation set (the biggest open gap)
-`data/candidates_expansion.jsonl` holds **1151 candidate windows from 24 new meetings**
+`data/candidates_expansion.jsonl` holds **2650 candidate windows from 64 new meetings**
 (Bdb001, Bed002, Bed003, Bed004, Bed005, Bed006, Bed008, Bed009, Bed011, Bed012, Bed013,
-Bed014, Bed015, Bed016, Bmr001, Bmr002, Bmr003, Bmr005, Bmr006, Bmr010, Bmr026, Bns003,
-Bro010, Bro024 - no ID collides with the existing set). Together with
-the 261 already labeled contexts that is **1412 contexts**, inside the plan's 500-1,000 target.
+Bed014, Bed015, Bed016, Bmr001, Bmr002, Bmr003, Bmr005, Bmr006, Bmr008, Bmr009, Bmr010,
+Bmr011, Bmr012, Bmr013, Bmr014, Bmr015, Bmr016, Bmr018, Bmr019, Bmr020, Bmr021, Bmr022,
+Bmr023, Bmr024, Bmr025, Bmr026, Bmr027, Bmr028, Bmr030, Bmr031, Bns001, Bns003, Bro003,
+Bro004, Bro005, Bro007, Bro008, Bro010, Bro011, Bro012, Bro013, Bro014, Bro015, Bro016,
+Bro017, Bro019, Bro021, Bro022, Bro023, Bro024, Bro025, Bro026, Bro027 - no ID collides
+with the existing set). Together with
+the 261 already labeled contexts that is **2911 contexts**, inside the plan's 500-1,000 target.
 
-**The 1151-window batch is pre-annotated by one AI annotator**: 123 action items and 6 deadlines,
+**The 2650-window batch is pre-annotated by one AI annotator**: 130 action items and 6 deadlines,
 reviewable in `claude_labels_expansion.py` and assembled in `data/annotated_expansion.jsonl`. The
 same provisional labels are written to all three sheets - `data/ann_A.jsonl`, `data/ann_B.jsonl`,
 `data/ann_C.jsonl` - so each file is complete and resumable. **They are identical copies, not three
 independent annotations: kappa across them is 1.000 by construction and is NOT evidence of
 inter-annotator agreement.** See `data/ANNOTATION_PROVENANCE.md`.
 
-To measure real agreement, restore the blank 1151-row templates and give one sheet to each annotator
+To measure real agreement, restore the blank 2650-row templates and give one sheet to each annotator
 (no comparing answers, and no `--suggest` - it anchors you to the pipeline). Recreate a blank sheet
 from the candidates (the 330-row templates in commit `e436bac` cover only the first batch;
-the current sheets have 1151 rows):
+the current sheets have 2650 rows):
 
 ```bash
 .venv/bin/python - <<'PY'
@@ -200,7 +204,7 @@ so partially labeled sheets are safe to use. The reported metrics below still us
 python icsi_candidates.py --dir transcripts --meetings Bed010 Bed017 Bmr029 Bro018 Bmr007 Bns002 --out data/candidates.jsonl --neg_ratio 0.3
 # 2 label (yours)                       or: python apply_labels.py   (Claude's demo labels)
 python annotate.py --inp data/candidates.jsonl --out data/annotated.jsonl
-# for the 1151-window expansion sheets use data/ann_A|B|C.jsonl (pre-filled provisional labels - see §4b)
+# for the 2650-window expansion sheets use data/ann_A|B|C.jsonl (pre-filled provisional labels - see §4b)
 # 3 split by meeting (+ optional validation meetings, for model selection only)
 python make_dataset.py --annotated data/annotated.jsonl --test-meetings Bro018 Bmr007 --val-meetings Bmr029
 # 4 predict (rule needs no training; tfidf/hybrid learn from the train split and, if given,
@@ -300,12 +304,12 @@ Typical errors (see `outputs/*_errors.csv`, column `failed_stage`):
 1. **The gold here was written by Claude (one annotator)** after reading each window, as a stand-in until you label your own.
    Review `claude_labels.py`; change labels you disagree with and rerun `python apply_labels.py && python run_all.py`.
    A final report should use labels you made, ideally double-annotated (`kappa.py`).
-   The 1151-window expansion batch is pre-annotated by the same AI annotator (123 positives,
+   The 2650-window expansion batch is pre-annotated by the same AI annotator (130 positives,
    `claude_labels_expansion.py` / `data/annotated_expansion.jsonl`); those provisional labels were
    copied into `data/ann_A|B|C.jsonl`, so the three sheets are **not** independent annotations and
    kappa across them is meaningless by construction. See "Expanding the annotation set" above and
    `data/ANNOTATION_PROVENANCE.md`.
-2. Only 6 of 76 meetings are labeled *in the evaluated dataset*; 24 more meetings (1151 windows) have
+2. Only 6 of 76 meetings are labeled *in the evaluated dataset*; 64 more meetings (2650 windows) have
    provisional AI pre-annotations that are not used in any reported metric yet. Only windows around
    cue words (+30% random cue-free windows, auto-labeled "not action") were sampled. Metrics describe
    *this sample*, not all of ICSI. Actions without any cue phrase were not sampled.

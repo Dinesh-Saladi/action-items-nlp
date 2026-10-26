@@ -56,7 +56,7 @@ Same-meeting windows share topics and speakers; random splitting would leak them
   (meeting times and past times are not deadlines).
 * Several tasks in one window: label the one for the most central turn; windows are spaced >= 4 turns apart to limit this.
 * Random cue-free windows are auto-labeled `false` (spot-check them if you can).
-* The 1151-window expansion batch is pre-annotated with one AI annotator's provisional labels
+* The 2650-window expansion batch is pre-annotated with one AI annotator's provisional labels
   (`data/annotated_expansion.jsonl`; review `claude_labels_expansion.py`). The same labels are copied
   into `data/ann_A.jsonl`, `ann_B.jsonl` and `ann_C.jsonl`, so those sheets are not independent
   annotations and kappa across them is 1.000 by construction - see README "Expanding the annotation
