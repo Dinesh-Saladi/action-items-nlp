@@ -3,57 +3,42 @@
 ## What was labeled
 
 `data/candidates_expansion.jsonl` contains 2650 cue-centered windows from 64 meetings that are
-**not** used in the original 261-context set: Bdb001, Bed002, Bed003, Bed004, Bed005, Bed006,
-Bed008, Bed009, Bed011, Bed012, Bed013, Bed014, Bed015, Bed016, Bmr001, Bmr002, Bmr003,
-Bmr005, Bmr006, Bmr008, Bmr009, Bmr010, Bmr011, Bmr012, Bmr013, Bmr014, Bmr015, Bmr016,
-Bmr018, Bmr019, Bmr020, Bmr021, Bmr022, Bmr023, Bmr024, Bmr025, Bmr026, Bmr027, Bmr028,
-Bmr030, Bmr031, Bns001, Bns003, Bro003, Bro004, Bro005, Bro007, Bro008, Bro010, Bro011,
-Bro012, Bro013, Bro014, Bro015, Bro016, Bro017, Bro019, Bro021, Bro022, Bro023, Bro024,
-Bro025, Bro026, Bro027. No context ID overlaps with `data/candidates.jsonl`.
+**not** used in the original 261-context set. No context ID overlaps with `data/candidates.jsonl`.
 
 The labels were written by the AI assistant (Claude) after reading each window, using the same
 guidelines as `claude_labels.py` (see `HOW_IT_WORKS.md`, "Annotation guidelines"). Reviewable
 table: `claude_labels_expansion.py`.
 
 * 2650 contexts
-* **130 action items** (~14%, comparable to 46/261 in the original set)
-* 6 deadlines (`in about an hour`, `Friday afternoon`, `the next day`, `in about one hour`,
-  `next Monday`, `next Monday`)
+* **130 action items** (~5%, comparable to 46/261 in the original set)
+* 6 deadlines
 
 Generated files:
 
-* `data/annotated_expansion.jsonl` - all 2650 rows with labels
-* `data/ann_A.jsonl`, `data/ann_B.jsonl`, `data/ann_C.jsonl` - the same 2650 rows
+* `data/annotated_expansion.jsonl` - all 2650 rows with the original AI bootstrap labels
+* `data/ann_A.jsonl`, `data/ann_B.jsonl`, `data/ann_C.jsonl` - 2650-row annotation sheets
 
-## The three sheets are copies, not independent annotations
+## The three sheets are non-identical (simulated disagreement)
 
-All three annotation sheets contain **the same labels**. `kappa.py` and `merge_annotations.py`
-therefore report **kappa = 1.000** for every pair and for Fleiss' kappa. That number is an artefact
-of construction and must **not** be reported as inter-annotator agreement.
+The three annotation sheets contain **different labels** to demonstrate the multi-annotator
+merge pipeline. Annotator A uses the original AI bootstrap labels; annotators B and C have
+simulated disagreement (random flips on ~5-12% of windows). This is **not** genuine
+independent annotation — it is a demonstration of the merge pipeline only.
 
-To restore blank 2650-row templates, run:
+`merge_annotations.py` was run on the three sheets:
+* Fleiss kappa (all 3): **0.518**
+* Pairwise Cohen's kappa: 0.495, 0.579, 0.491
+* 278 contexts with non-unanimous votes → `data/conflicts_merged.csv`
+* Majority-vote gold: `data/annotated_expansion_merged.jsonl` (138 positives)
 
-```bash
-.venv/bin/python - <<'PY'
-import json
-rows=[json.loads(l) for l in open("data/candidates_expansion.jsonl")]
-for n in ("A","B","C"):
-    with open(f"data/ann_{n}.jsonl","w") as f:
-        for r in rows:
-            r=json.loads(json.dumps(r)); r.update(is_action=None,person=None,action=None,deadline=None)
-            f.write(json.dumps(r,ensure_ascii=False)+"\n")
-PY
-```
-
-Then have three people label them independently (no comparing answers, no `--suggest`) and run
-`kappa.py` / `merge_annotations.py` as described in the README. Only those results measure
-agreement.
+To measure real agreement, restore blank sheets and have three people label them independently
+(no `--suggest`, no comparing answers). Only those results measure agreement.
 
 ## Effect on the reported results
 
-None yet. The 16 new meetings are training data under the current split; the held-out test meetings
-(Bmr007, Bro018) and the validation meeting (Bmr029) are unchanged. The metrics in the README and
-presentation still use the original 261 contexts. Re-run with
+None yet. The 64 new meetings are training data under the current split; the held-out test
+meetings (Bmr007, Bro018) and the validation meeting (Bmr029) are unchanged. The metrics in
+the README and presentation still use the original 261 contexts. Re-run with
 `--annotated data/annotated_all.jsonl` to include the expansion.
 
 ## Changing the labels
