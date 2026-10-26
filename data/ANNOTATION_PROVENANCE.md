@@ -21,15 +21,18 @@ Generated files:
 ## The three sheets are non-identical (simulated disagreement)
 
 The three annotation sheets contain **different labels** to demonstrate the multi-annotator
-merge pipeline. Annotator A uses the original AI bootstrap labels; annotators B and C have
-simulated disagreement (random flips on ~5-12% of windows). This is **not** genuine
-independent annotation — it is a demonstration of the merge pipeline only.
+merge pipeline. Annotator A uses the original AI bootstrap labels (careful annotator);
+annotator B is more liberal (adds false positives on cue-heavy windows that look like tasks
+but aren't); annotator C is moderate (misses some borderline positives, adds a few false
+positives). Disagreement is concentrated on genuinely ambiguous windows (soft commitments,
+"we should" suggestions, "you have to" necessity statements), not random flips.
+This is **not** genuine independent annotation — it is a demonstration of the merge pipeline only.
 
 `merge_annotations.py` was run on the three sheets:
-* Fleiss kappa (all 3): **0.518**
-* Pairwise Cohen's kappa: 0.495, 0.579, 0.491
-* 278 contexts with non-unanimous votes → `data/conflicts_merged.csv`
-* Majority-vote gold: `data/annotated_expansion_merged.jsonl` (138 positives)
+* Fleiss kappa (all 3): **0.870**
+* Pairwise Cohen's kappa: 0.862, 0.925, 0.830
+* 53 contexts with non-unanimous votes → `data/conflicts_merged.csv`
+* Majority-vote gold: `data/annotated_expansion_merged.jsonl` (130 positives)
 
 To measure real agreement, restore blank sheets and have three people label them independently
 (no `--suggest`, no comparing answers). Only those results measure agreement.

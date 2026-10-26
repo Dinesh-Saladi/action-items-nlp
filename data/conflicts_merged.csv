@@ -1,279 +1,54 @@
 id,issue,annotator1,annotator2,annotator3
-Bdb001_n131,not unanimous on is_action,NO,me011 | do something | None,NO
-Bdb001_t110,not unanimous on is_action,NO,fe016 | do something | None,NO
-Bdb001_t167,not unanimous on is_action,me011 | do something | None,NO,NO
-Bdb001_t197,not unanimous on is_action,me018 | do something | None,NO,NO
-Bdb001_t208,not unanimous on is_action,NO,me011 | do something | None,NO
-Bdb001_t319,not unanimous on is_action,mn017 | do something | None,NO,NO
-Bdb001_t33,not unanimous on is_action,fe016 | do something | None,NO,NO
-Bdb001_t399,not unanimous on is_action,NO,mn017 | do something | None,NO
-Bed002_n358,not unanimous on is_action,NO,NO,me012 | do something | None
-Bed002_n45,not unanimous on is_action,me011 | do something | None,NO,NO
-Bed002_n489,not unanimous on is_action,NO,NO,me003 | do something | None
-Bed002_t134,not unanimous on is_action,NO,mn015 | do something | None,NO
-Bed002_t180,not unanimous on is_action,me010 | do something | None,me010 | do something | None,NO
-Bed002_t454,not unanimous on is_action,NO,mn015 | do something | None,NO
-Bed003_n171,not unanimous on is_action,me012 | do something | None,NO,NO
-Bed003_n90,not unanimous on is_action,NO,fe004 | do something | None,NO
-Bed003_t256,not unanimous on is_action,me003 | set a few nodes and find their probabilities | NULL,NO,NO
-Bed003_t574,not unanimous on is_action,me003 | put the net up again | NULL,me003 | put the net up again | NULL,NO
-Bed003_t642,not unanimous on is_action,NO,mn015 | do something | None,NO
-Bed004_n125,not unanimous on is_action,NO,me012 | do something | None,NO
-Bed004_n283,not unanimous on is_action,me003 | do something | None,NO,NO
-Bed004_t115,not unanimous on is_action,NO,mn015 | do something | None,mn015 | do something | None
-Bed004_t155,not unanimous on is_action,NO,NO,me010 | do something | None
-Bed004_t209,not unanimous on is_action,me010 | do something | None,NO,NO
-Bed004_t324,not unanimous on is_action,mn015 | come up with code for a 'cognitive dispatcher' module | NULL,mn015 | come up with code for a 'cognitive dispatcher' module | NULL,NO
-Bed004_t88,not unanimous on is_action,NO,NO,fe046 | do something | None
-Bed004_t9,not unanimous on is_action,me012 | hit the black square when done (don't hit record) | NULL,me012 | hit the black square when done (don't hit record) | NULL,NO
-Bed005_n227,not unanimous on is_action,NO,NO,me010 | do something | None
-Bed005_t281,not unanimous on is_action,NO,NO,me010 | do something | None
-Bed005_t318,not unanimous on is_action,NO,me010 | come up with a general story about construction grammar | NULL,me010 | come up with a general story about construction grammar | NULL
-Bed005_t582,not unanimous on is_action,NO,me003 | do something | None,NO
-Bed006_n11,not unanimous on is_action,fe046 | do something | None,NO,NO
-Bed006_n242,not unanimous on is_action,mn015 | do something | None,NO,NO
-Bed006_t104,not unanimous on is_action,NO,NO,fe046 | send it | NULL
-Bed006_t316,not unanimous on is_action,NO,mn015 | do something | None,NO
-Bed006_t520,not unanimous on is_action,mn036 | do something | None,NO,NO
-Bed006_t711,not unanimous on is_action,mn015 | do something | None,NO,NO
-Bed006_t745,not unanimous on is_action,NO,mn015 | do something | None,NO
-Bed006_t805,not unanimous on is_action,NO,mn015 | do something | None,NO
-Bed008_t31,not unanimous on is_action,NO,mn015 | do something | None,NO
-Bed008_t341,not unanimous on is_action,me010 | do something | None,NO,NO
-Bed008_t696,not unanimous on is_action,me010 | do something | None,NO,NO
-Bed008_t764,not unanimous on is_action,me003 | bring up the function thing | NULL,me003 | bring up the function thing | NULL,NO
-Bed008_t96,not unanimous on is_action,me010 | do something | None,NO,NO
-Bed011_n179,not unanimous on is_action,NO,me010 | do something | None,NO
-Bed011_t0,not unanimous on is_action,NO,fe046 | give me the remote | NULL,fe046 | give me the remote | NULL
-Bed011_t101,not unanimous on is_action,NO,mn015 | do something | None,NO
-Bed011_t129,not unanimous on is_action,me045 | start diving into the data | NULL,me045 | start diving into the data | NULL,NO
-Bed011_t461,not unanimous on is_action,NO,me010 | do something | None,NO
-Bed011_t466,not unanimous on is_action,mn015 | tell you the German tourist data | NULL,NO,mn015 | tell you the German tourist data | NULL
-Bed011_t94,not unanimous on is_action,me045 | do something | None,NO,NO
-Bed012_n328,not unanimous on is_action,NO,NULL | do this the upcoming days | NULL,NULL | do this the upcoming days | NULL
-Bed012_t123,not unanimous on is_action,mn015 | do something | None,NO,mn015 | do something | None
-Bed012_t189,not unanimous on is_action,NO,me003 | do something | None,NO
-Bed012_t225,not unanimous on is_action,NO,fn050 | do something | None,NO
-Bed012_t358,not unanimous on is_action,mn015 | get it in here | NULL,mn015 | get it in here | NULL,NO
-Bed012_t59,not unanimous on is_action,me003 | do this in Perl | NULL,me003 | do this in Perl | NULL,NO
-Bed013_t100,not unanimous on is_action,NO,me003 | do something | None,NO
-Bed013_t149,not unanimous on is_action,me003 | work on the SmartKom stuff and help with that tomorrow | NULL,me003 | work on the SmartKom stuff and help with that tomorrow | NULL,NO
-Bed013_t396,not unanimous on is_action,NO,me003 | do something | None,NO
-Bed013_t403,not unanimous on is_action,mn015 | do something | None,NO,NO
-Bed014_n207,not unanimous on is_action,NO,me045 | do something | None,NO
-Bed014_n440,not unanimous on is_action,NO,mn015 | do something | None,NO
-Bed014_t596,not unanimous on is_action,mn015 | write it up | NULL,mn015 | write it up | NULL,NO
-Bed014_t750,not unanimous on is_action,NO,NO,fe004 | do something | None
-Bed015_n745,not unanimous on is_action,NO,fe004 | do something | None,NO
-Bed015_t543,not unanimous on is_action,NO,NO,fe004 | do something | None
-Bed015_t567,not unanimous on is_action,NO,me045 | do something | None,NO
-Bed015_t8,not unanimous on is_action,NO,fe004 | do something | None,NO
-Bed016_n511,not unanimous on is_action,mn015 | do something | None,NO,NO
-Bed016_n89,not unanimous on is_action,me045 | do something | None,NO,NO
-Bed016_t253,not unanimous on is_action,NO,NO,mn015 | do something | None
-Bmr001_n142,not unanimous on is_action,NO,me013 | do something | None,NO
-Bmr001_n505,not unanimous on is_action,NO,NO,me013 | do something | None
-Bmr001_t208,not unanimous on is_action,NO,me013 | do something | None,NO
-Bmr002_n154,not unanimous on is_action,NO,me022 | do something | None,NO
-Bmr002_t222,not unanimous on is_action,fe008 | provide word-level transcripts | NULL,NO,fe008 | provide word-level transcripts | NULL
-Bmr002_t237,not unanimous on is_action,fe008 | do something | None,NO,NO
-Bmr002_t645,not unanimous on is_action,me011 | check it and try to download it | NULL,me011 | check it and try to download it | NULL,NO
-Bmr002_t700,not unanimous on is_action,NO,fe008 | do something | None,NO
-Bmr003_n1315,not unanimous on is_action,me028 | do something | None,NO,NO
-Bmr003_n304,not unanimous on is_action,me022 | do something | None,NO,NO
-Bmr003_n624,not unanimous on is_action,NO,me028 | do something | None,NO
-Bmr003_t35,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr003_t379,not unanimous on is_action,fe008 | do something | None,NO,NO
-Bmr003_t641,not unanimous on is_action,me011 | do something | None,NO,NO
-Bmr005_n780,not unanimous on is_action,NO,fe016 | do something | None,NO
-Bmr005_t113,not unanimous on is_action,fe016 | do something | None,NO,NO
-Bmr005_t144,not unanimous on is_action,fe008 | do something | None,NO,NO
-Bmr005_t359,not unanimous on is_action,NO,me013 | do something | None,NO
-Bmr005_t53,not unanimous on is_action,NO,fe008 | do something | None,NO
-Bmr005_t58,not unanimous on is_action,NO,fe008 | do something | None,NO
-Bmr006_n1281,not unanimous on is_action,NO,NO,me011 | do something | None
-Bmr006_t1210,not unanimous on is_action,me013 | do something | None,NO,NO
-Bmr006_t1327,not unanimous on is_action,fe008 | do something | None,NO,NO
-Bmr006_t241,not unanimous on is_action,NO,fe016 | do something | None,NO
-Bmr006_t495,not unanimous on is_action,NO,mn005 | do something | None,NO
-Bmr008_n638,not unanimous on is_action,fe008 | do something | None,NO,NO
-Bmr008_n825,not unanimous on is_action,NO,fe016 | do something | None,NO
-Bmr008_t1061,not unanimous on is_action,fe016 | do something | None,NO,NO
-Bmr008_t469,not unanimous on is_action,me018 | do something | None,NO,NO
-Bmr008_t48,not unanimous on is_action,me011 | write something like 'position' | NULL,me011 | write something like 'position' | NULL,NO
-Bmr008_t630,not unanimous on is_action,NO,me011 | fiddle around with the language stuff | NULL,me011 | fiddle around with the language stuff | NULL
-Bmr008_t883,not unanimous on is_action,NO,me011 | send an email and ask if he received it | NULL,me011 | send an email and ask if he received it | NULL
-Bmr009_t14,not unanimous on is_action,NO,me013 | do something | None,NO
-Bmr010_t197,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr011_t23,not unanimous on is_action,NO,fe008 | do something | None,NO
-Bmr011_t467,not unanimous on is_action,NO,NO,fe008 | do something | None
-Bmr012_n190,not unanimous on is_action,NO,fe016 | do something | None,NO
-Bmr012_t360,not unanimous on is_action,NO,fe008 | do something | None,NO
-Bmr012_t713,not unanimous on is_action,NO,me013 | do something | None,NO
-Bmr013_t277,not unanimous on is_action,NO,me013 | do something | None,NO
-Bmr014_n12,not unanimous on is_action,me011 | do something | None,NO,NO
-Bmr014_t102,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr014_t204,not unanimous on is_action,fe008 | do something | None,NO,NO
-Bmr014_t338,not unanimous on is_action,NO,NO,me013 | do something | None
-Bmr014_t425,not unanimous on is_action,me011 | do something | None,NO,NO
-Bmr014_t54,not unanimous on is_action,me011 | do something | None,NO,NO
-Bmr014_t79,not unanimous on is_action,NO,NO,me013 | do something | None
-Bmr015_t544,not unanimous on is_action,fe008 | do something | None,NO,NO
-Bmr016_t203,not unanimous on is_action,NO,me013 | do something | None,NO
-Bmr016_t393,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr016_t431,not unanimous on is_action,NO,NO,me011 | do something | None
-Bmr016_t635,not unanimous on is_action,NO,fe008 | do something | None,NO
-Bmr016_t78,not unanimous on is_action,NO,fe008 | do something | None,fe008 | do something | None
-Bmr016_t891,not unanimous on is_action,NO,fe016 | do something | None,NO
-Bmr016_t904,not unanimous on is_action,NO,NO,fe016 | do something | None
-Bmr016_t943,not unanimous on is_action,NO,NO,fe016 | do something | None
-Bmr018_t116,not unanimous on is_action,NO,NO,me018 | do something | None
-Bmr018_t200,not unanimous on is_action,NO,me011 | do something | None,me011 | do something | None
-Bmr018_t676,not unanimous on is_action,NO,NO,me013 | do something | None
-Bmr019_n442,not unanimous on is_action,fe008 | do something | None,NO,NO
-Bmr019_t254,not unanimous on is_action,NO,me013 | do something | None,NO
-Bmr019_t48,not unanimous on is_action,mn017 | do something | None,NO,NO
-Bmr019_t516,not unanimous on is_action,NO,mn017 | do something | None,NO
-Bmr019_t753,not unanimous on is_action,NO,NO,me013 | do something | None
-Bmr019_t798,not unanimous on is_action,NO,mn005 | do something | None,NO
-Bmr019_t827,not unanimous on is_action,NO,mn005 | do something | None,NO
-Bmr019_t867,not unanimous on is_action,NO,NO,me001 | do something | None
-Bmr020_n697,not unanimous on is_action,NO,fe008 | do something | None,NO
-Bmr020_n757,not unanimous on is_action,fe008 | do something | None,NO,NO
-Bmr020_t369,not unanimous on is_action,NO,me001 | do something | None,NO
-Bmr020_t589,not unanimous on is_action,NO,NO,me018 | do something | None
-Bmr020_t71,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr020_t867,not unanimous on is_action,NO,fe008 | do something | None,NO
-Bmr021_t130,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr021_t194,not unanimous on is_action,NO,NO,mn017 | do something | None
-Bmr021_t234,not unanimous on is_action,NO,NO,mn017 | do something | None
-Bmr021_t68,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr022_t2,not unanimous on is_action,NO,me013 | do something | None,NO
-Bmr022_t475,not unanimous on is_action,NO,fe008 | do something | None,NO
-Bmr022_t501,not unanimous on is_action,me011 | do something | None,NO,NO
-Bmr022_t603,not unanimous on is_action,NO,NO,fe016 | do something | None
-Bmr022_t632,not unanimous on is_action,NO,me011 | do something | None,me011 | do something | None
-Bmr022_t647,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr022_t760,not unanimous on is_action,me011 | do something | None,NO,NO
-Bmr023_n51,not unanimous on is_action,NO,NO,fe016 | do something | None
-Bmr023_t333,not unanimous on is_action,NO,NO,mn017 | do something | None
-Bmr023_t627,not unanimous on is_action,NO,NO,fe016 | do something | None
-Bmr024_n277,not unanimous on is_action,NO,fe016 | do something | None,NO
-Bmr024_n560,not unanimous on is_action,me011 | do something | None,NO,NO
-Bmr024_t184,not unanimous on is_action,me013 | do something | None,NO,me013 | do something | None
-Bmr024_t24,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr024_t33,not unanimous on is_action,NO,me013 | do something | None,NO
-Bmr024_t496,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr024_t638,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr025_n119,not unanimous on is_action,NO,me018 | do something | None,NO
-Bmr025_t223,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr025_t366,not unanimous on is_action,me011 | do something | None,NO,NO
-Bmr025_t540,not unanimous on is_action,NO,me013 | do something | None,NO
-Bmr026_n10,not unanimous on is_action,NO,NO,me018 | do something | None
-Bmr026_n539,not unanimous on is_action,NO,NO,me011 | do something | None
-Bmr027_n625,not unanimous on is_action,NO,fe016 | do something | None,NO
-Bmr027_t168,not unanimous on is_action,NO,NO,fe016 | do something | None
-Bmr027_t299,not unanimous on is_action,NO,NO,me013 | do something | None
-Bmr027_t32,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr027_t346,not unanimous on is_action,NO,me018 | do something | None,NO
-Bmr027_t575,not unanimous on is_action,NO,me013 | do something | None,NO
-Bmr028_n345,not unanimous on is_action,NO,mn017 | do something | None,NO
-Bmr028_n814,not unanimous on is_action,NO,me013 | do something | None,NO
-Bmr028_t1029,not unanimous on is_action,NO,NO,fe016 | do something | None
-Bmr028_t24,not unanimous on is_action,mn017 | do something | None,NO,NO
-Bmr028_t321,not unanimous on is_action,mn014 | do something | None,NO,NO
-Bmr028_t43,not unanimous on is_action,me018 | do something | None,NO,NO
-Bmr028_t638,not unanimous on is_action,NO,mn017 | do something | None,NO
-Bmr028_t67,not unanimous on is_action,NO,NO,fe008 | do something | None
-Bmr028_t830,not unanimous on is_action,NO,fe008 | do something | None,NO
-Bmr030_n76,not unanimous on is_action,me011 | do something | None,NO,NO
-Bmr030_t318,not unanimous on is_action,NO,NO,me051 | do something | None
-Bmr030_t348,not unanimous on is_action,NO,NO,me011 | do something | None
-Bmr030_t6,not unanimous on is_action,NO,me011 | do something | None,NO
-Bmr031_n783,not unanimous on is_action,NO,NO,me013 | do something | None
-Bmr031_n867,not unanimous on is_action,me011 | do something | None,NO,NO
-Bmr031_n961,not unanimous on is_action,NO,NO,fe016 | do something | None
-Bmr031_t240,not unanimous on is_action,NO,me001 | do something | None,NO
-Bmr031_t583,not unanimous on is_action,NO,NO,me011 | do something | None
-Bmr031_t739,not unanimous on is_action,NO,me013 | do something | None,NO
-Bns001_n251,not unanimous on is_action,NO,mn021 | do something | None,NO
-Bns001_n447,not unanimous on is_action,NO,NO,mn035 | do something | None
-Bns001_n468,not unanimous on is_action,NO,mn035 | do something | None,NO
-Bns001_t122,not unanimous on is_action,mn082 | do something | None,NO,NO
-Bns001_t153,not unanimous on is_action,mn081 | do something | None,NO,NO
-Bns001_t367,not unanimous on is_action,NO,mn030 | do something | None,NO
-Bns001_t634,not unanimous on is_action,mn082 | do something | None,NO,NO
-Bns001_t656,not unanimous on is_action,NO,mn082 | do something | None,NO
-Bns001_t81,not unanimous on is_action,fn083 | do something | None,NO,fn083 | do something | None
-Bns003_n104,not unanimous on is_action,NO,mn021 | read through the web page text and check it | NULL,mn021 | read through the web page text and check it | NULL
-Bns003_n289,not unanimous on is_action,NO,mn082 | do something | None,NO
-Bns003_t189,not unanimous on is_action,NO,mn030 | do something | None,NO
-Bns003_t252,not unanimous on is_action,NO,mn082 | do something | None,NO
-Bns003_t349,not unanimous on is_action,NO,NO,mn082 | do something | None
-Bns003_t36,not unanimous on is_action,mn021 | build and set up a computer (with FreeBSD) | NULL,mn021 | build and set up a computer (with FreeBSD) | NULL,NO
-Bro003_t155,not unanimous on is_action,NO,mn007 | do something | None,NO
-Bro003_t662,not unanimous on is_action,me018 | do something | None,NO,NO
-Bro003_t77,not unanimous on is_action,NO,NO,me013 | do something | None
-Bro004_n262,not unanimous on is_action,NO,NO,me013 | do something | None
-Bro004_t166,not unanimous on is_action,me013 | do something | None,NO,NO
-Bro004_t525,not unanimous on is_action,me013 | do something | None,NO,NO
-Bro005_n12,not unanimous on is_action,NO,fn002 | do something | None,NO
-Bro005_n291,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro005_t231,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro005_t41,not unanimous on is_action,NO,mn007 | do something | None,NO
-Bro005_t513,not unanimous on is_action,NO,mn007 | do something | None,NO
-Bro005_t528,not unanimous on is_action,NO,NO,me013 | do something | None
-Bro007_n52,not unanimous on is_action,NO,NO,me013 | do something | None
-Bro007_t289,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro010_n411,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro010_t210,not unanimous on is_action,me013 | do something | None,NO,NO
-Bro010_t32,not unanimous on is_action,mn007 | talk with Sunil about what they're doing | NULL,mn007 | talk with Sunil about what they're doing | NULL,NO
-Bro011_t204,not unanimous on is_action,NO,me018 | do something | None,NO
-Bro011_t293,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro012_n14,not unanimous on is_action,NO,me018 | do something | None,NO
-Bro012_t242,not unanimous on is_action,me013 | do something | None,NO,NO
-Bro012_t296,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro012_t309,not unanimous on is_action,NO,NO,mn007 | do something | None
-Bro012_t522,not unanimous on is_action,me018 | do something | None,NO,NO
-Bro013_t128,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro013_t25,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro013_t280,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro014_t210,not unanimous on is_action,NO,me018 | do something | None,NO
-Bro014_t242,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro014_t251,not unanimous on is_action,mn007 | do something | None,NO,mn007 | do something | None
-Bro014_t502,not unanimous on is_action,NO,mn007 | do something | None,NO
-Bro015_t65,not unanimous on is_action,NO,me026 | do something | None,NO
-Bro015_t82,not unanimous on is_action,NO,me018 | do something | None,NO
-Bro016_n71,not unanimous on is_action,me013 | do something | None,NO,NO
-Bro016_t163,not unanimous on is_action,NO,me018 | do something | None,NO
-Bro016_t214,not unanimous on is_action,NO,NO,me018 | do something | None
-Bro016_t310,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro016_t315,not unanimous on is_action,NO,me026 | do something | None,NO
-Bro017_t490,not unanimous on is_action,NO,mn049 | do something | None,NO
-Bro017_t97,not unanimous on is_action,NO,mn049 | do something | None,NO
-Bro019_n270,not unanimous on is_action,NO,NO,mn052 | do something | None
-Bro019_t497,not unanimous on is_action,NO,me006 | do something | None,NO
-Bro019_t549,not unanimous on is_action,NO,NO,me026 | do something | None
-Bro021_t190,not unanimous on is_action,me013 | do something | None,me013 | do something | None,NO
-Bro022_t300,not unanimous on is_action,mn052 | do something | None,mn052 | do something | None,NO
-Bro023_t342,not unanimous on is_action,NO,mn007 | do something | None,NO
-Bro023_t431,not unanimous on is_action,me013 | do something | None,NO,NO
-Bro023_t539,not unanimous on is_action,mn007 | do something | None,NO,NO
-Bro024_n259,not unanimous on is_action,NO,mn052 | do something | None,NO
-Bro024_n340,not unanimous on is_action,me013 | do something | None,NO,NO
-Bro024_t134,not unanimous on is_action,NO,me026 | do something | None,NO
-Bro024_t15,not unanimous on is_action,NO,me026 | do something | None,NO
-Bro024_t24,not unanimous on is_action,NO,me026 | make the plots and put them on his web page | NULL,NO
-Bro024_t245,not unanimous on is_action,me013 | do something | None,NO,NO
+Bdb001_n418,not unanimous on is_action,NO,me011 | look at the ATLAS format and let us know what you think | NULL,me011 | look at the ATLAS format and let us know what you think | NULL
+Bdb001_t304,not unanimous on is_action,NO,fe016 | do something | None,NO
+Bdb001_t70,not unanimous on is_action,NO,me011 | do something | None,NO
+Bed002_t479,not unanimous on is_action,NO,me012 | do something | None,NO
+Bed003_t130,not unanimous on is_action,me003 | switch to the JavaBayes program and talk about the belief net | NULL,me003 | switch to the JavaBayes program and talk about the belief net | NULL,NO
+Bed003_t761,not unanimous on is_action,NO,NULL | have a trial run with Fey | Friday afternoon,NULL | have a trial run with Fey | Friday afternoon
+Bed003_t809,not unanimous on is_action,NO,mn015 | do something | None,NO
+Bed004_t102,not unanimous on is_action,NO,fe046 | do something | None,NO
+Bed004_t209,not unanimous on is_action,NO,NO,me010 | do something | None
+Bed005_t322,not unanimous on is_action,NO,mn015 | do something | None,NO
+Bed005_t514,not unanimous on is_action,NO,me012 | do something | None,NO
+Bed008_n644,not unanimous on is_action,NO,NO,me012 | do something | None
+Bed008_t417,not unanimous on is_action,NO,me010 | do something | None,NO
+Bed009_t274,not unanimous on is_action,NO,me010 | do something | None,NO
+Bed011_t190,not unanimous on is_action,NO,fe046 | do something | None,NO
+Bed013_t664,not unanimous on is_action,NO,me003 | do something | None,NO
+Bed014_t277,not unanimous on is_action,NO,me010 | do something | None,NO
+Bed015_t788,not unanimous on is_action,NO,NO,mn015 | do something | None
+Bed016_t312,not unanimous on is_action,NO,fe004 | give comments on the presentation separately | NULL,fe004 | give comments on the presentation separately | NULL
+Bmr003_t851,not unanimous on is_action,me011 | rewrite the mix tool | NULL,me011 | rewrite the mix tool | NULL,NO
+Bmr003_t889,not unanimous on is_action,NO,me011 | do something | None,NO
+Bmr006_t101,not unanimous on is_action,NO,me011 | do something | None,NO
+Bmr006_t29,not unanimous on is_action,NO,fe016 | do something | None,NO
+Bmr012_t310,not unanimous on is_action,NO,NO,mn017 | do something | None
+Bmr012_t92,not unanimous on is_action,NO,fe016 | do something | None,NO
+Bmr013_n340,not unanimous on is_action,NO,fe008 | do something | None,NO
+Bmr013_t656,not unanimous on is_action,NO,me011 | do something | None,NO
+Bmr014_t308,not unanimous on is_action,NO,me011 | do something | None,NO
+Bmr014_t425,not unanimous on is_action,NO,me011 | do something | None,NO
+Bmr018_t318,not unanimous on is_action,NO,me011 | do something | None,NO
+Bmr018_t460,not unanimous on is_action,NO,fe016 | do something | None,NO
+Bmr020_t589,not unanimous on is_action,NO,me018 | do something | None,NO
+Bmr023_t112,not unanimous on is_action,NO,mn017 | do something | None,NO
+Bmr024_t57,not unanimous on is_action,NO,me013 | do something | None,NO
+Bmr026_t372,not unanimous on is_action,NO,mn017 | do something | None,NO
+Bmr027_t270,not unanimous on is_action,NO,NO,me011 | do something | None
+Bmr027_t699,not unanimous on is_action,NO,NO,fe016 | do something | None
+Bmr031_t345,not unanimous on is_action,NO,NO,mn017 | do something | None
+Bmr031_t590,not unanimous on is_action,NO,fe016 | do something | None,NO
+Bns003_t405,not unanimous on is_action,NO,mn082 | do something | None,NO
+Bns003_t65,not unanimous on is_action,NO,mn082 | do something | None,NO
+Bro003_t674,not unanimous on is_action,NO,me013 | do something | None,NO
+Bro003_t687,not unanimous on is_action,NO,me013 | do something | None,NO
+Bro004_t382,not unanimous on is_action,NO,NO,me013 | do something | None
+Bro005_t227,not unanimous on is_action,NO,NO,me013 | do something | None
+Bro011_t257,not unanimous on is_action,NO,me018 | do something | None,NO
+Bro021_t131,not unanimous on is_action,NO,NO,mn052 | do something | None
+Bro021_t186,not unanimous on is_action,NO,NO,me013 | do something | None
+Bro021_t229,not unanimous on is_action,NO,NO,mn007 | do something | None
+Bro021_t376,not unanimous on is_action,NO,NO,me013 | do something | None
 Bro024_t424,not unanimous on is_action,NO,me018 | do something | None,NO
-Bro024_t587,not unanimous on is_action,NO,NO,mn007 | do something | None
-Bro024_t701,not unanimous on is_action,NO,fn002 | do something | None,NO
-Bro024_t721,not unanimous on is_action,mn052 | try the clean LDA filter | NULL,mn052 | try the clean LDA filter | NULL,NO
-Bro025_t219,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro025_t293,not unanimous on is_action,me013 | do something | None,NO,NO
-Bro026_t306,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro026_t460,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro026_t98,not unanimous on is_action,NO,me013 | do something | None,NO
-Bro027_n33,not unanimous on is_action,NO,mn007 | do something | None,NO
-Bro027_t715,not unanimous on is_action,me013 | do something | None,NO,NO
-Bro027_t811,not unanimous on is_action,NO,me013 | do something | None,NO
+Bro024_t721,not unanimous on is_action,NO,mn052 | try the clean LDA filter | NULL,mn052 | try the clean LDA filter | NULL
+Bro027_t66,not unanimous on is_action,NO,me013 | do something | None,NO
