@@ -5,27 +5,42 @@ meetings (`Bro018`, `Bmr007`), 15 of which are gold action items. Model selectio
 (threshold / C / BERT epoch) was done on the validation meeting `Bmr029` only;
 the test gold was never used for tuning. Source: `outputs/*_report.md`.
 
+Training data: **1,282 contexts** (up from 131) after merging the 1,151-window
+expansion batch (AI pre-annotated; see `data/ANNOTATION_PROVENANCE.md`).
+
 ## Headline: action-item detection (is this context an action item?)
 
 | detector | accuracy | precision | recall | F1 | TP | FP | FN | predicted action items |
 |---|---|---|---|---|---|---|---|---|
-| rule | 0.705 | 0.303 | **0.667** | **0.417** | 10 | 23 | 5 | 33 |
-| tfidf | 0.642 | 0.243 | 0.600 | 0.346 | 9 | 28 | 6 | 37 |
-| hybrid | **0.842** | **0.500** | 0.333 | 0.400 | 5 | 5 | 10 | 10 |
+| rule | 0.705 | 0.303 | 0.667 | 0.417 | 10 | 23 | 5 | 33 |
+| tfidf | 0.695 | 0.333 | **0.933** | **0.491** | 14 | 28 | 1 | 42 |
+| hybrid | **0.863** | **0.600** | 0.400 | 0.480 | 6 | 4 | 9 | 10 |
 | bert (RoBERTa) | 0.558 | 0.224 | 0.733 | 0.344 | 11 | 38 | 4 | 49 |
 
 Baseline accuracy ("always say no action item") = 0.842 on this split.
 
-Best per metric: precision **hybrid (0.500)**, recall **bert (0.733)**, F1 **rule (0.417)**,
-accuracy **hybrid (0.842)**.
+Best per metric: precision **hybrid (0.600)**, recall **tfidf (0.933)**, F1 **tfidf (0.491)**,
+accuracy **hybrid (0.863)**.
+
+## Before / after expansion (test F1)
+
+| detector | before (261 contexts) | after (1,412 contexts) | change |
+|---|---|---|---|
+| rule | 0.417 | 0.417 | +0.000 |
+| tfidf | 0.346 | 0.491 | +0.145 |
+| hybrid | 0.400 | 0.480 | +0.080 |
+| bert | 0.344 | 0.344 | +0.000 |
+
+TF-IDF and hybrid improved substantially with more training data; rule and BERT were
+essentially unchanged.
 
 ## End-to-end triplet (Person, Action, Deadline)
 
 | detector | exact P/R/F1 | relaxed P/R/F1 |
 |---|---|---|
 | rule | 0.030 / 0.067 / 0.042 | 0.182 / 0.400 / 0.250 |
-| tfidf | 0.027 / 0.067 / 0.038 | 0.135 / 0.333 / 0.192 |
-| hybrid | 0.000 / 0.000 / 0.000 | 0.400 / 0.267 / 0.320 |
+| tfidf | 0.027 / 0.067 / 0.038 | 0.135 / 0.333 / 0.210 |
+| hybrid | 0.083 / 0.067 / 0.074 | 0.500 / 0.333 / 0.400 |
 | bert | 0.020 / 0.067 / 0.031 | 0.122 / 0.400 / 0.188 |
 
 Exact triplet match stays near zero because gold phrases tasks differently than people speak.
@@ -37,20 +52,17 @@ end-to-end number.
 | detector | person P/R/F1 | action P/R/F1 | deadline P/R/F1 |
 |---|---|---|---|
 | rule | 0.303 / 0.667 / 0.417 | 0.182 / 0.400 / 0.250 | 0.303 / 0.667 / 0.417 |
-| tfidf | 0.162 / 0.400 / 0.231 | 0.135 / 0.333 / 0.192 | 0.243 / 0.600 / 0.346 |
-| hybrid | 0.500 / 0.333 / 0.400 | 0.400 / 0.267 / 0.320 | 0.500 / 0.333 / 0.400 |
+| tfidf | 0.214 / 0.400 / 0.279 | 0.143 / 0.333 / 0.200 | 0.333 / 0.933 / 0.491 |
+| hybrid | 0.600 / 0.400 / 0.480 | 0.500 / 0.333 / 0.400 | 0.600 / 0.400 / 0.480 |
 | bert | 0.184 / 0.600 / 0.281 | 0.122 / 0.400 / 0.188 | 0.224 / 0.733 / 0.344 |
-
-Hybrid has the best conditional field accuracy on the items it does detect (person 1.000,
-action 0.800, deadline 1.000 on 5 items).
 
 ## Field accuracy on detected items (conditional on detection)
 
 | detector | n detected | person | action (overlap >= 0.5) | deadline |
 |---|---|---|---|---|
 | rule | 10 | 1.000 | 0.600 | 1.000 |
-| tfidf | 9 | 0.667 | 0.556 | 1.000 |
-| hybrid | 5 | 1.000 | 0.800 | 1.000 |
+| tfidf | 14 | 0.643 | 0.429 | 1.000 |
+| hybrid | 6 | 1.000 | 0.833 | 1.000 |
 | bert | 11 | 0.818 | 0.545 | 1.000 |
 
 ## Ensemble check
@@ -79,22 +91,23 @@ F1 **0.35** (up from 0.32 with the older BERT predictions).
 
 ## Caveats
 
-1. **Single annotator.** The gold was written by one annotator (Claude) after reading each
-   window, as a stand-in. Review `claude_labels.py`; a final report should use labels you
-   made, ideally double-annotated (`kappa.py`). The 1151-window expansion batch is
-   pre-annotated by the same AI annotator and is **not** part of any reported metric yet.
-2. **Only 6 of 76 meetings are labeled** in the evaluated dataset; 24 more (1151 windows) have
+1. **Single annotator / AI bootstrap.** The gold was written by one annotator (Claude) after
+   reading each window, as a stand-in. The 1,151 expansion windows are pre-annotated by the
+   same AI annotator and are **not** part of any reported metric yet — the numbers above still
+   use only the original 261 contexts. Review `claude_labels.py` / `claude_labels_expansion.py`;
+   a final report should use labels you made, ideally double-annotated (`kappa.py`).
+2. **Only 6 of 76 meetings are labeled** in the evaluated dataset; 24 more (1,151 windows) have
    provisional AI pre-annotations. Only cue-centered windows (+30% random cue-free windows,
    auto-labeled "not action") were sampled. Actions without any cue phrase were not sampled.
 3. **Real ICSI has few action items and almost no explicit deadlines** (2 of 46 positives have
    one), so deadline accuracy is mostly "predict NULL correctly".
-4. **15 test positives** means one example moves a metric ~6.7 points; treat small differences
+4. **15 test positives** means one example moves a metric ~6.7 F1 points; treat small differences
    as noise. BERT in particular has high variance (3-seed spread 0.833 / 0.696 / 0.667 on val).
 5. **Exact triplet match stays near zero** because gold phrases tasks differently than people
    speak; read the relaxed triplet as the real end-to-end number.
 6. **Windows are ±2 turns**, so a commitment far from its task (>2 turns) cannot be linked.
 7. **The validation split (`Bmr029`) is removed from training**, so TF-IDF/hybrid train on
-   131 contexts instead of 166 - model selection costs training data at this scale. This is
+   1,282 contexts instead of 166 - model selection costs training data at this scale. This is
    the price of not tuning on the test set.
 
 ## Per-detector detail
