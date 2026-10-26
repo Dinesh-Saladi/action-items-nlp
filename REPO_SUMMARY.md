@@ -168,6 +168,8 @@ detectors.
 
 - `README.md`: quick start, file layout, formats, commands, scoring
   definitions, detector descriptions, results, and caveats.
+- `RESULTS.md`: consolidated headline numbers, component P/R/F1, ensemble check,
+  BERT validation ladder, majority-vote figure, and caveats.
 - `HOW_IT_WORKS.md`: conceptual explanation of the seven pipeline stages and
   annotation guidelines.
 - `REPO_SUMMARY.md`: this repository-wide technical summary.
@@ -204,14 +206,6 @@ detectors.
 - `bert_ensemble.py`: validation-only ensemble/subset selection for BERT
   predictions.
 - `app.py`: optional Streamlit demonstration UI.
-
-### Documentation
-
-- `README.md`: quick start, file layout, formats, commands, scoring
-  definitions, detector descriptions, results, and caveats.
-- `HOW_IT_WORKS.md`: conceptual explanation of the seven pipeline stages and
-  annotation guidelines.
-- `REPO_SUMMARY.md`: this repository-wide technical summary.
 
 ### Input and generated data
 
