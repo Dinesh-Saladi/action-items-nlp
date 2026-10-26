@@ -138,17 +138,23 @@ You can swap in anything as long as the formats match:
 * You can also edit the `.jsonl` in any text editor: one JSON object per line; change `person`/`action`/`deadline`.
 
 ### Expanding the annotation set (the biggest open gap)
-`data/candidates_expansion.jsonl` holds **330 unlabeled windows from 8 new meetings**
+`data/candidates_expansion.jsonl` holds **330 candidate windows from 8 new meetings**
 (Bdb001, Bed003, Bed016, Bmr010, Bmr026, Bns003, Bro010, Bro024 - no ID collides with the existing
 set). Together with the 261 already labeled contexts that is **591 contexts**, inside the plan's
 500-1,000 target.
 
-**Three annotation sheets are pre-created: `data/ann_A.jsonl`, `data/ann_B.jsonl`,
-`data/ann_C.jsonl`** - the same 330 windows with empty labels, one per annotator. Give one
-file to each person, label independently (no comparing answers, and no `--suggest` - it anchors
-you to the pipeline), and leave the existing `data/annotated.jsonl` untouched:
+**The 330-window batch is pre-annotated by one AI annotator**: 54 action items and 5 deadlines,
+reviewable in `claude_labels_expansion.py` and assembled in `data/annotated_expansion.jsonl`. The
+same provisional labels are written to all three sheets - `data/ann_A.jsonl`, `data/ann_B.jsonl`,
+`data/ann_C.jsonl` - so each file is complete and resumable. **They are identical copies, not three
+independent annotations: kappa across them is 1.000 by construction and is NOT evidence of
+inter-annotator agreement.** See `data/ANNOTATION_PROVENANCE.md`.
+
+To measure real agreement, restore the blank 330-row templates and give one sheet to each annotator
+(no comparing answers, and no `--suggest` - it anchors you to the pipeline):
 
 ```bash
+git show e436bac:data/ann_A.jsonl > data/ann_A.jsonl   # repeat for ann_B / ann_C
 # annotator A labels their own sheet; rerun the same command to resume.
 # every row is preserved, so the file is always a complete sheet
 .venv/bin/python annotate.py --inp data/ann_A.jsonl --out data/ann_A.jsonl
@@ -157,6 +163,7 @@ you to the pipeline), and leave the existing `data/annotated.jsonl` untouched:
 ```
 
 ```bash
+# (only meaningful with independent labels; the shipped copies give kappa = 1.000)
 # 1. agreement: pairwise Cohen's kappa (+ person/deadline agreement where both say yes)
 .venv/bin/python kappa.py --a data/ann_A.jsonl --b data/ann_B.jsonl
 # 2. merge: majority-vote gold + pairwise + Fleiss kappa + data/conflicts.csv to discuss
@@ -169,9 +176,11 @@ cat data/annotated.jsonl data/annotated_expansion.jsonl > data/annotated_all.jso
 .venv/bin/python run_all.py --annotated data/annotated_all.jsonl \
     --test-meetings Bro018 Bmr007 --val-meetings Bmr029
 ```
-All 8 new meetings are train/val material - the held-out test meetings (Bmr007, Bro018) do not
-change, so before/after numbers stay comparable. Downstream tools skip `"is_action": null` rows,
-so partially labeled sheets are safe to use.
+All 8 new meetings become training data under the current split - the held-out test meetings
+(Bmr007, Bro018) and the validation meeting (Bmr029) do not change, so before/after numbers stay
+comparable. Downstream tools skip `"is_action": null` rows,
+so partially labeled sheets are safe to use. The reported metrics below still use only the original
+261 contexts until the experiment is re-run on `annotated_all.jsonl`.
 
 ## 5. Commands in detail
 
@@ -180,7 +189,7 @@ so partially labeled sheets are safe to use.
 python icsi_candidates.py --dir transcripts --meetings Bed010 Bed017 Bmr029 Bro018 Bmr007 Bns002 --out data/candidates.jsonl --neg_ratio 0.3
 # 2 label (yours)                       or: python apply_labels.py   (Claude's demo labels)
 python annotate.py --inp data/candidates.jsonl --out data/annotated.jsonl
-# for the 330-window multi-annotator batch use data/ann_A|B|C.jsonl - see "Expanding the annotation set"
+# for the 330-window expansion sheets use data/ann_A|B|C.jsonl (pre-filled provisional labels - see §4b)
 # 3 split by meeting (+ optional validation meetings, for model selection only)
 python make_dataset.py --annotated data/annotated.jsonl --test-meetings Bro018 Bmr007 --val-meetings Bmr029
 # 4 predict (rule needs no training; tfidf/hybrid learn from the train split and, if given,
@@ -280,10 +289,15 @@ Typical errors (see `outputs/*_errors.csv`, column `failed_stage`):
 1. **The gold here was written by Claude (one annotator)** after reading each window, as a stand-in until you label your own.
    Review `claude_labels.py`; change labels you disagree with and rerun `python apply_labels.py && python run_all.py`.
    A final report should use labels you made, ideally double-annotated (`kappa.py`).
-   330 further windows from 8 new meetings are already generated; three blank annotation sheets
-   (`data/ann_A|B|C.jsonl`) are ready for the multi-annotator pass - see "Expanding the annotation set" above.
-2. Only 6 of 76 meetings are *labeled*, and only windows around cue words (+30% random cue-free windows, auto-labeled "not action").
-   Metrics describe *this sample*, not all of ICSI. Actions without any cue phrase were not sampled.
+   The 330-window expansion batch is pre-annotated by the same AI annotator (54 positives,
+   `claude_labels_expansion.py` / `data/annotated_expansion.jsonl`); those provisional labels were
+   copied into `data/ann_A|B|C.jsonl`, so the three sheets are **not** independent annotations and
+   kappa across them is meaningless by construction. See "Expanding the annotation set" above and
+   `data/ANNOTATION_PROVENANCE.md`.
+2. Only 6 of 76 meetings are labeled *in the evaluated dataset*; 8 more meetings (330 windows) have
+   provisional AI pre-annotations that are not used in any reported metric yet. Only windows around
+   cue words (+30% random cue-free windows, auto-labeled "not action") were sampled. Metrics describe
+   *this sample*, not all of ICSI. Actions without any cue phrase were not sampled.
 3. Real ICSI has few action items and almost no explicit deadlines (2 of 46 positives have one), so deadline accuracy is
    mostly "predict NULL correctly".
 4. Labeling rules used: see `HOW_IT_WORKS.md` section "Annotation guidelines".

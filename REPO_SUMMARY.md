@@ -22,6 +22,10 @@ action items. The generated split contains 131 training contexts (20 action
 items), 35 validation contexts (11 action items) and 95 test contexts (15
 action items). There are 76 `.mrt` transcript files in `transcripts/`.
 
+A further 330 contexts from 8 new meetings are pre-annotated by the same AI
+annotator (`data/annotated_expansion.jsonl`, 54 action items) but are not part
+of the checked-in run yet. See `data/ANNOTATION_PROVENANCE.md`.
+
 ## Important conclusion about the model
 
 `run_all.py` runs four detectors:
@@ -62,6 +66,13 @@ can resume or edit previous answers.
 applies those labels to the candidate file and writes
 `data/annotated.jsonl`. The included labels are a demo gold set and should be
 reviewed before treating them as authoritative.
+
+`claude_labels_expansion.py` contains the provisional AI labels for the
+330-window expansion batch; `apply_expansion_labels.py` writes them to all three
+annotation sheets (`data/ann_A.jsonl`, `data/ann_B.jsonl`, `data/ann_C.jsonl`)
+and to `data/annotated_expansion.jsonl`. Because the three sheets receive the
+same labels, they are copies rather than independent annotations - see
+`data/ANNOTATION_PROVENANCE.md` before reporting agreement.
 
 `merge_annotations.py` supports two or more annotator files, including three
 annotators. It intersects their context IDs, majority-votes `is_action`,
@@ -174,6 +185,10 @@ detectors.
 - `annotate.py`: interactive, resumable manual annotation.
 - `claude_labels.py`: included demo labels keyed by context ID.
 - `apply_labels.py`: applies demo labels to candidates.
+- `claude_labels_expansion.py`: provisional AI labels for the 330-window
+  expansion batch.
+- `apply_expansion_labels.py`: applies the expansion labels to the three
+  annotation sheets and `data/annotated_expansion.jsonl`.
 - `merge_annotations.py`: multi-annotator majority merge and agreement report.
 - `kappa.py`: two-annotator Cohen kappa report.
 - `make_dataset.py`: meeting-based train/validation/test dataset creation.
@@ -185,6 +200,9 @@ detectors.
   `--with-bert`.
 - `train_bert.py`: RoBERTa/BERT detection training on the shared split,
   exporting `outputs/bert_model`.
+- `bert_tune.py`: BERT configuration sweep with validation-only selection.
+- `bert_ensemble.py`: validation-only ensemble/subset selection for BERT
+  predictions.
 - `app.py`: optional Streamlit demonstration UI.
 
 ### Documentation
@@ -202,9 +220,12 @@ detectors.
 - `data/candidates.jsonl`: unlabeled candidate contexts.
 - `data/candidates_expansion.jsonl`: 330 further unlabeled windows from 8 new
   meetings, generated for the annotation scale-up (591 contexts total).
-- `data/ann_A.jsonl`, `data/ann_B.jsonl`, `data/ann_C.jsonl`: pre-created
-  annotation sheets for the expansion batch (330 rows each, empty labels), one
-  per annotator for independent labeling and kappa/majority merge.
+- `data/ann_A.jsonl`, `data/ann_B.jsonl`, `data/ann_C.jsonl`: 330-row annotation
+  sheets for the expansion batch, pre-filled with the same provisional AI labels
+  (identical copies - not independent annotations; see
+  `data/ANNOTATION_PROVENANCE.md`).
+- `data/annotated_expansion.jsonl`: the 330 expansion windows with those
+  provisional labels (54 action items). Not yet part of the checked-in run.
 - `data/annotated.jsonl`: candidate contexts plus the included labels.
 - `data/train/input.jsonl`: training contexts without labels.
 - `data/train/gold.jsonl`: training labels used by TF-IDF and hybrid training.
@@ -253,14 +274,18 @@ python icsi_candidates.py \
   --out data/candidates.jsonl
 ```
 
-Create manual labels (for the 330-window expansion batch, `data/ann_A.jsonl`,
-`ann_B.jsonl` and `ann_C.jsonl` are pre-created, one per annotator):
+The 330-window expansion sheets are already pre-filled with provisional AI
+labels. To create genuinely independent manual labels, restore the blank
+templates first (`git show e436bac:data/ann_A.jsonl > data/ann_A.jsonl`, repeat
+for B/C) and give one file to each annotator:
 
 ```bash
 python annotate.py \
   --inp data/ann_A.jsonl \
   --out data/ann_A.jsonl          # rerun to resume; unanswered rows are preserved
 ```
+
+To regenerate the provisional labels instead: `python apply_expansion_labels.py`.
 
 For the original 261-context batch:
 
@@ -270,7 +295,9 @@ python annotate.py \
   --out data/annotated.jsonl
 ```
 
-Merge three annotators before splitting and scoring:
+Merge three annotators before splitting and scoring. **Only meaningful with
+independent labels: the shipped sheets all contain the same AI labels, so kappa
+is 1.000 by construction.**
 
 ```bash
 python kappa.py --a data/ann_A.jsonl --b data/ann_B.jsonl
@@ -283,8 +310,8 @@ python run_all.py --annotated data/annotated_all.jsonl
 
 ## Validation performed
 
-All 14 Python source files were formatted with Black and pass Black's check
-mode and `py_compile`. Verified in the `.venv` on Python 3.14.7:
+All Python source files pass `py_compile`; the pipeline scripts were checked
+with Black. Verified in the `.venv` on Python 3.14.7:
 
 - `run_all.py --val-meetings Bmr029 --with-bert` completed end to end and
   produced reports for all four detectors (rule / tfidf / hybrid / bert).
@@ -297,18 +324,25 @@ mode and `py_compile`. Verified in the `.venv` on Python 3.14.7:
   `Nlp project.md` verbatim: `(Sarah, update the documentation, Friday)` and
   `(Bob, update the documentation, Friday)`.
 - The `.mrt` path (`icsi.py`, `icsi_candidates.py`) and the annotation tools
-  (`apply_labels.py`, `kappa.py`, `merge_annotations.py`) are unchanged by this
-  pass; `annotate.py` now preserves unanswered rows, so each annotator file
-  stays a complete resumable sheet.
+  (`apply_labels.py`, `apply_expansion_labels.py`, `kappa.py`,
+  `merge_annotations.py`) were exercised on the expansion sheets; `annotate.py`
+  preserves unanswered rows, so each annotator file stays a complete resumable
+  sheet.
+- `apply_expansion_labels.py` wrote 330 labeled rows to each sheet and to
+  `data/annotated_expansion.jsonl` (54 positives). On the identical sheets
+  `kappa.py` reports 1.000 and `merge_annotations.py` reports no conflicts, as
+  expected by construction - see `data/ANNOTATION_PROVENANCE.md`.
 
 ## Known limitations
 
 - The included demo labels were produced by one annotator and are not a
-  three-annotator consensus; only 261 of the 591 candidate contexts are
-  labeled so far. The remaining 330 (8 new meetings) are generated, and three
-  blank annotation sheets (`data/ann_A|B|C.jsonl`, 330 rows each) are ready for
-  independent annotation, kappa and majority merge - which would bring the set
-  into the plan's 500-1,000 range.
+  three-annotator consensus. The original 261 contexts are the evaluated gold;
+  the 330 expansion contexts are pre-annotated by the same AI annotator
+  (`data/annotated_expansion.jsonl`, 54 positives) and the same labels are
+  copied into `data/ann_A|B|C.jsonl`. Those three sheets are therefore not
+  independent, and kappa across them is 1.000 by construction - it must not be
+  reported as inter-annotator agreement. Independent human labels for the 330
+  (and a second annotator for the original set) remain the main gap.
 - `merge_annotations.py` compares only context IDs present in every annotator
   file, so shared IDs are required for a complete agreement calculation.
 - Candidate generation focuses on cue-centered windows and sampled negatives;

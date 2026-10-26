@@ -86,12 +86,15 @@ Status: **✅ implemented** · **⚠️ partial** · **❌ not implemented** (ga
 
 ## Still open (highest value first)
 
-1. **Annotation size** (plan: 500–1,000 contexts; labeled: 261, single annotator) — the
-   candidate windows are now **generated**: `data/candidates_expansion.jsonl` adds 330 windows
-   from 8 new meetings → **591 contexts total**, inside the plan's range. What remains is the
-   human part: label them with `annotate.py` (see README "Expanding the annotation set"), and add
-   a second annotator to reconcile with `merge_annotations.py` / `kappa.py`. This is the only open
-   item that limits *every* metric.
+1. **Annotation size** (plan: 500–1,000 contexts; evaluated: 261, single annotator) — the
+   candidate windows are **generated and pre-annotated**: `data/candidates_expansion.jsonl` adds
+   330 windows from 8 new meetings (`data/annotated_expansion.jsonl`, 54 positives, AI bootstrap)
+   → **591 contexts total**, inside the plan's range. What remains is the human part: the three
+   sheets (`data/ann_A|B|C.jsonl`) contain identical copies of the AI labels, so restore the blank
+   templates and label them independently with `annotate.py`, then reconcile with
+   `merge_annotations.py` / `kappa.py` (see README "Expanding the annotation set" and
+   `data/ANNOTATION_PROVENANCE.md`). Re-run the experiment on the merged 591 contexts. This is the
+   only open item that limits *every* metric.
 2. **Exact-triplet F1 is gold-phrasing-bound** — e.g. gold `go through that list` cannot be
    produced from a window whose text only says `I'll go through that`. Double annotation +
    a wording convention in the guidelines (or relying on the relaxed metric) is the fix.
