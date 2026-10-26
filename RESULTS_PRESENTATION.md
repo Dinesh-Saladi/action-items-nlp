@@ -47,6 +47,6 @@ Exact triplet match is ~0 for all detectors.
 - **BERT** has the best recall (0.733) but worst precision (0.224).
 - Majority-vote ensemble (rule + tfidf + hybrid) reaches relaxed F1 **0.35**.
 - Test set has only 15 positives: one example ≈ 6.7 F1 points, so treat small differences as noise.
-- All results use the original 261 labeled contexts; the 330 expansion windows are pre-annotated (AI) but not yet in any metric.
+- All results use the original 261 labeled contexts; the 662 expansion windows are pre-annotated (AI) but not yet in any metric.
 
 Source: `outputs/*_report.md`. Full detail: `RESULTS.md`.

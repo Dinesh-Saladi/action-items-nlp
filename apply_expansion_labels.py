@@ -51,7 +51,7 @@ def main():
 
     cands = load(CANDIDATES)
     ids = [r["id"] for r in cands]
-    assert len(ids) == len(set(ids)) == 330, f"unexpected candidate count: {len(ids)}"
+    assert len(ids) == len(set(ids)), f"duplicate candidate ids: {len(ids) - len(set(ids))}"
     missing = sorted(set(LABELS) - set(ids))
     assert not missing, f"label ids not in candidates: {missing}"
 

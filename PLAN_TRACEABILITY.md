@@ -88,8 +88,8 @@ Status: **✅ implemented** · **⚠️ partial** · **❌ not implemented** (ga
 
 1. **Annotation size** (plan: 500–1,000 contexts; evaluated: 261, single annotator) — the
    candidate windows are **generated and pre-annotated**: `data/candidates_expansion.jsonl` adds
-   330 windows from 8 new meetings (`data/annotated_expansion.jsonl`, 54 positives, AI bootstrap)
-   → **591 contexts total**, inside the plan's range. What remains is the human part: the three
+   662 windows from 16 new meetings (`data/annotated_expansion.jsonl`, 94 positives, AI bootstrap)
+   → **923 contexts total**, inside the plan's range. What remains is the human part: the three
    sheets (`data/ann_A|B|C.jsonl`) contain identical copies of the AI labels, so restore the blank
    templates and label them independently with `annotate.py`, then reconcile with
    `merge_annotations.py` / `kappa.py` (see README "Expanding the annotation set" and

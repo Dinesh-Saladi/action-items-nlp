@@ -1,4 +1,4 @@
-"""Provisional labels written by Claude after reading each 330-window expansion candidate.
+"""Provisional labels written by Claude after reading each candidate in the expansion batches.
 
 REVIEW THESE: they are one annotator's judgement, not independent human annotation.
 
@@ -22,6 +22,10 @@ LABELS = {
     "Bdb001_t433": ("NULL", "look at the ATLAS format", "NULL"),
     "Bdb001_t488": ("me011", "look at the ATLAS format again", "NULL"),
     "Bdb001_t622": ("fe016", "read the digits", "NULL"),
+    # ---- Bed002
+    "Bed002_t19": ("me011", "read the digit strings first", "NULL"),
+    "Bed002_t234": ("me010", "go back to the previous slide", "NULL"),
+    "Bed002_t443": ("mn015", "show the state of the system", "next Monday"),
     # ---- Bed003
     "Bed003_t130": ("me003", "switch to the JavaBayes program and talk about the belief net", "NULL"),
     "Bed003_t17": ("fe016", "come back up and check if you're still meeting", "in about an hour"),
@@ -33,6 +37,50 @@ LABELS = {
     "Bed003_t6": ("NULL", "put your name on the sign-in sheet", "NULL"),
     "Bed003_t63": ("me003", "get rid of the 'Click to add notes' box", "NULL"),
     "Bed003_t761": ("NULL", "have a trial run with Fey", "Friday afternoon"),
+    # ---- Bed004
+    "Bed004_t138": ("mn015", "ask Lila about how to put Fey on the payroll", "NULL"),
+    "Bed004_t324": ("mn015", "come up with code for a 'cognitive dispatcher' module", "NULL"),
+    "Bed004_t9": ("me012", "hit the black square when done (don't hit record)", "NULL"),
+    # ---- Bed005
+    "Bed005_n441": ("me010", "ask Bhaskara how much of this JavaBayes supports", "NULL"),
+    "Bed005_t17": ("NULL", "check out social infrastructures for possible subjects", "NULL"),
+    "Bed005_t22": ("mn015", "make a first draft of the write-up note and send it", "NULL"),
+    "Bed005_t318": ("me010", "come up with a general story about construction grammar", "NULL"),
+    "Bed005_t374": ("mn015", "get a first draft of that (with Johno)", "NULL"),
+    "Bed005_t384": ("me010", "dig up some more stuff from Dekai", "NULL"),
+    "Bed005_t435": ("me012", "take a look at it (the paper)", "NULL"),
+    "Bed005_t499": ("NULL", "write up a flat file", "NULL"),
+    "Bed005_t523": ("mn015", "show examples from the ontology", "next Monday"),
+    "Bed005_t577": ("mn015", "think through getting EVA vectors dynamically out of ontologies", "NULL"),
+    "Bed005_t66": ("mn015", "show the templates", "NULL"),
+    # ---- Bed006
+    "Bed006_n737": ("me003", "get the binding point with a nice example", "NULL"),
+    "Bed006_t104": ("fe046", "send it", "NULL"),
+    "Bed006_t114": ("NULL", "tell interested people to write a mail to mn015 or Jerry", "NULL"),
+    "Bed006_t139": ("mn015", "scrape together [the plan]", "NULL"),
+    # ---- Bed008
+    "Bed008_t213": ("mn015", "move those up about halfway", "NULL"),
+    "Bed008_t293": ("mn015", "copy it somewhere else", "NULL"),
+    "Bed008_t764": ("me003", "bring up the function thing", "NULL"),
+    # ---- Bed009
+    "Bed009_t193": ("mn048", "put a message into the right place to ask that question", "NULL"),
+    "Bed009_t203": ("mn015", "talk to Michael", "NULL"),
+    "Bed009_t241": ("mn048", "go check (about changing the word)", "NULL"),
+    "Bed009_t34": ("NULL", "look over Tilman's shoulder while he changes the grammars to English", "NULL"),
+    # ---- Bed011
+    "Bed011_t0": ("fe046", "give me the remote", "NULL"),
+    "Bed011_t129": ("me045", "start diving into the data", "NULL"),
+    "Bed011_t146": ("fe046", "schedule ten people", "NULL"),
+    "Bed011_t153": ("fe046", "pick out some stuff (not transcribe all)", "NULL"),
+    "Bed011_t160": ("fe046", "make notes pointing to interesting things", "NULL"),
+    "Bed011_t466": ("mn015", "tell you the German tourist data", "NULL"),
+    "Bed011_t481": ("mn015", "try to expand the ontology node", "NULL"),
+    # ---- Bed012
+    "Bed012_n328": ("NULL", "do this the upcoming days", "NULL"),
+    "Bed012_t323": ("mn015", "worry about the ontology interface", "NULL"),
+    "Bed012_t358": ("mn015", "get it in here", "NULL"),
+    "Bed012_t405": ("mn015", "send an email with a time suggestion", "NULL"),
+    "Bed012_t59": ("me003", "do this in Perl", "NULL"),
     # ---- Bed016
     "Bed016_t131": ("mn015", "show the draft talk and get input on it", "NULL"),
     "Bed016_t184": ("mn015", "present a talk at EML", "NULL"),
