@@ -81,9 +81,9 @@ F1 **0.35** (up from 0.32 with the older BERT predictions).
 
 1. **Single annotator.** The gold was written by one annotator (Claude) after reading each
    window, as a stand-in. Review `claude_labels.py`; a final report should use labels you
-   made, ideally double-annotated (`kappa.py`). The 662-window expansion batch is
+   made, ideally double-annotated (`kappa.py`). The 1151-window expansion batch is
    pre-annotated by the same AI annotator and is **not** part of any reported metric yet.
-2. **Only 6 of 76 meetings are labeled** in the evaluated dataset; 16 more (662 windows) have
+2. **Only 6 of 76 meetings are labeled** in the evaluated dataset; 24 more (1151 windows) have
    provisional AI pre-annotations. Only cue-centered windows (+30% random cue-free windows,
    auto-labeled "not action") were sampled. Actions without any cue phrase were not sampled.
 3. **Real ICSI has few action items and almost no explicit deadlines** (2 of 46 positives have

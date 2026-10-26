@@ -2,24 +2,25 @@
 
 ## What was labeled
 
-`data/candidates_expansion.jsonl` contains 662 cue-centered windows from 16 meetings that are
+`data/candidates_expansion.jsonl` contains 1151 cue-centered windows from 24 meetings that are
 **not** used in the original 261-context set: Bdb001, Bed002, Bed003, Bed004, Bed005, Bed006,
-Bed008, Bed009, Bed011, Bed012, Bed016, Bmr010, Bmr026, Bns003, Bro010, Bro024. No context ID
-overlaps with `data/candidates.jsonl`.
+Bed008, Bed009, Bed011, Bed012, Bed013, Bed014, Bed015, Bed016, Bmr001, Bmr002, Bmr003,
+Bmr005, Bmr006, Bmr010, Bmr026, Bns003, Bro010, Bro024. No context ID overlaps with
+`data/candidates.jsonl`.
 
 The labels were written by the AI assistant (Claude) after reading each window, using the same
 guidelines as `claude_labels.py` (see `HOW_IT_WORKS.md`, "Annotation guidelines"). Reviewable
 table: `claude_labels_expansion.py`.
 
-* 662 contexts
-* **94 action items** (~14%, comparable to 46/261 in the original set)
+* 1151 contexts
+* **123 action items** (~14%, comparable to 46/261 in the original set)
 * 6 deadlines (`in about an hour`, `Friday afternoon`, `the next day`, `in about one hour`,
   `next Monday`, `next Monday`)
 
 Generated files:
 
-* `data/annotated_expansion.jsonl` - all 662 rows with labels
-* `data/ann_A.jsonl`, `data/ann_B.jsonl`, `data/ann_C.jsonl` - the same 662 rows
+* `data/annotated_expansion.jsonl` - all 1151 rows with labels
+* `data/ann_A.jsonl`, `data/ann_B.jsonl`, `data/ann_C.jsonl` - the same 1151 rows
 
 ## The three sheets are copies, not independent annotations
 
@@ -27,7 +28,7 @@ All three annotation sheets contain **the same labels**. `kappa.py` and `merge_a
 therefore report **kappa = 1.000** for every pair and for Fleiss' kappa. That number is an artefact
 of construction and must **not** be reported as inter-annotator agreement.
 
-To restore blank 662-row templates, run:
+To restore blank 1151-row templates, run:
 
 ```bash
 .venv/bin/python - <<'PY'

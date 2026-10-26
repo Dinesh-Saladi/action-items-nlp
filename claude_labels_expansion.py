@@ -81,12 +81,49 @@ LABELS = {
     "Bed012_t358": ("mn015", "get it in here", "NULL"),
     "Bed012_t405": ("mn015", "send an email with a time suggestion", "NULL"),
     "Bed012_t59": ("me003", "do this in Perl", "NULL"),
+    # ---- Bed013
+    "Bed013_t126": ("mn015", "ask Eva about the EBayes", "NULL"),
+    "Bed013_t149": ("me003", "work on the SmartKom stuff and help with that tomorrow", "NULL"),
+    "Bed013_t288": ("NULL", "look at the web page", "NULL"),
+    "Bed013_t385": ("NULL", "sketch out the details", "NULL"),
+    "Bed013_t675": ("me045", "look more into that data", "NULL"),
+    # ---- Bed014
+    "Bed014_t596": ("mn015", "write it up", "NULL"),
+    "Bed014_t90": ("NULL", "send me the note", "NULL"),
+    # ---- Bed015
+    "Bed015_t18": ("fe004", "start on number two on the notation", "NULL"),
+    "Bed015_t694": ("me010", "make a proposal on how to proceed", "NULL"),
     # ---- Bed016
     "Bed016_t131": ("mn015", "show the draft talk and get input on it", "NULL"),
     "Bed016_t184": ("mn015", "present a talk at EML", "NULL"),
     "Bed016_t259": ("fe004", "email the updated slides", "NULL"),
     "Bed016_t312": ("fe004", "give comments on the presentation separately", "NULL"),
     "Bed016_t321": ("mn015", "add the scalability point about constructions and construal to the proposal", "NULL"),
+    # ---- Bmr001
+    "Bmr001_t301": ("me011", "send mail to speech local", "NULL"),
+    # ---- Bmr002
+    "Bmr002_t222": ("fe008", "provide word-level transcripts", "NULL"),
+    "Bmr002_t645": ("me011", "check it and try to download it", "NULL"),
+    "Bmr002_t858": ("me011", "go download 'Transcriber' and look at it", "NULL"),
+    "Bmr002_t868": ("me011", "try to get those as well", "NULL"),
+    # ---- Bmr003
+    "Bmr003_t1080": ("me011", "put it together", "NULL"),
+    "Bmr003_t1219": ("me028", "build a cabinet", "NULL"),
+    "Bmr003_t1415": ("me011", "remember to bring M_ and M_'s next time", "NULL"),
+    "Bmr003_t470": ("NULL", "get it so that it detects volume and inserts a marker", "NULL"),
+    "Bmr003_t498": ("fe008", "do that tomorrow", "NULL"),
+    "Bmr003_t851": ("me011", "rewrite the mix tool", "NULL"),
+    # ---- Bmr005
+    "Bmr005_t186": ("mn005", "label the different acoustic", "NULL"),
+    "Bmr005_t7": ("me011", "collect the digit forms and write it down", "NULL"),
+    # ---- Bmr006
+    "Bmr006_t1099": ("fe008", "give you the short version", "NULL"),
+    "Bmr006_t1128": ("fe008", "report on next time", "NULL"),
+    "Bmr006_t1157": ("me013", "make a brief comment about what we're covering", "NULL"),
+    "Bmr006_t162": ("fe016", "go up there and record the meeting", "NULL"),
+    "Bmr006_t383": ("me011", "archive it and delete the files", "NULL"),
+    "Bmr006_t682": ("mn005", "include the differential derivatives", "NULL"),
+    "Bmr006_t687": ("me013", "take just a few features", "NULL"),
     # ---- Bmr010
     "Bmr010_t16": ("fe008", "give an update on the transcription effort and raise the microphone cleanliness issue", "NULL"),
     "Bmr010_t205": ("me013", "ping them about the format", "NULL"),
