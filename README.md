@@ -141,19 +141,37 @@ You can swap in anything as long as the formats match:
 `data/candidates_expansion.jsonl` holds **330 unlabeled windows from 8 new meetings**
 (Bdb001, Bed003, Bed016, Bmr010, Bmr026, Bns003, Bro010, Bro024 - no ID collides with the existing
 set). Together with the 261 already labeled contexts that is **591 contexts**, inside the plan's
-500-1,000 target. To fold them in:
+500-1,000 target.
+
+**Three annotation sheets are pre-created: `data/ann_A.jsonl`, `data/ann_B.jsonl`,
+`data/ann_C.jsonl`** - the same 330 windows with empty labels, one per annotator. Give one
+file to each person, label independently (no comparing answers, and no `--suggest` - it anchors
+you to the pipeline), and leave the existing `data/annotated.jsonl` untouched:
 
 ```bash
-# 1. label the new batch into its own file, so the existing gold is never touched
-.venv/bin/python annotate.py --inp data/candidates_expansion.jsonl --out data/ann_expansion.jsonl
-# 2. concatenate (safe: ids never overlap) and re-run the experiment
-cat data/annotated.jsonl data/ann_expansion.jsonl > data/annotated_all.jsonl
+# annotator A labels their own sheet; rerun the same command to resume.
+# every row is preserved, so the file is always a complete sheet
+.venv/bin/python annotate.py --inp data/ann_A.jsonl --out data/ann_A.jsonl
+# annotator B: --inp/--out data/ann_B.jsonl      annotator C: data/ann_C.jsonl
+# (or edit the .jsonl by hand: set is_action true/false, then person / action / deadline)
+```
+
+```bash
+# 1. agreement: pairwise Cohen's kappa (+ person/deadline agreement where both say yes)
+.venv/bin/python kappa.py --a data/ann_A.jsonl --b data/ann_B.jsonl
+# 2. merge: majority-vote gold + pairwise + Fleiss kappa + data/conflicts.csv to discuss
+.venv/bin/python merge_annotations.py \
+    --files data/ann_A.jsonl data/ann_B.jsonl data/ann_C.jsonl \
+    --out data/annotated_expansion.jsonl
+# 3. resolve data/conflicts.csv (ties stay is_action=null), re-run merge, then combine
+#    with the 261 existing labels (safe: ids never overlap) and re-run the experiment
+cat data/annotated.jsonl data/annotated_expansion.jsonl > data/annotated_all.jsonl
 .venv/bin/python run_all.py --annotated data/annotated_all.jsonl \
     --test-meetings Bro018 Bmr007 --val-meetings Bmr029
 ```
 All 8 new meetings are train/val material - the held-out test meetings (Bmr007, Bro018) do not
-change, so before/after numbers stay comparable. For a second annotator, run `annotate.py` with the
-same `--inp` but a different `--out`, then reconcile with `merge_annotations.py`.
+change, so before/after numbers stay comparable. Downstream tools skip `"is_action": null` rows,
+so partially labeled sheets are safe to use.
 
 ## 5. Commands in detail
 
@@ -162,6 +180,7 @@ same `--inp` but a different `--out`, then reconcile with `merge_annotations.py`
 python icsi_candidates.py --dir transcripts --meetings Bed010 Bed017 Bmr029 Bro018 Bmr007 Bns002 --out data/candidates.jsonl --neg_ratio 0.3
 # 2 label (yours)                       or: python apply_labels.py   (Claude's demo labels)
 python annotate.py --inp data/candidates.jsonl --out data/annotated.jsonl
+# for the 330-window multi-annotator batch use data/ann_A|B|C.jsonl - see "Expanding the annotation set"
 # 3 split by meeting (+ optional validation meetings, for model selection only)
 python make_dataset.py --annotated data/annotated.jsonl --test-meetings Bro018 Bmr007 --val-meetings Bmr029
 # 4 predict (rule needs no training; tfidf/hybrid learn from the train split and, if given,
@@ -261,7 +280,8 @@ Typical errors (see `outputs/*_errors.csv`, column `failed_stage`):
 1. **The gold here was written by Claude (one annotator)** after reading each window, as a stand-in until you label your own.
    Review `claude_labels.py`; change labels you disagree with and rerun `python apply_labels.py && python run_all.py`.
    A final report should use labels you made, ideally double-annotated (`kappa.py`).
-   330 further windows from 8 new meetings are already generated and waiting: see "Expanding the annotation set" above.
+   330 further windows from 8 new meetings are already generated; three blank annotation sheets
+   (`data/ann_A|B|C.jsonl`) are ready for the multi-annotator pass - see "Expanding the annotation set" above.
 2. Only 6 of 76 meetings are *labeled*, and only windows around cue words (+30% random cue-free windows, auto-labeled "not action").
    Metrics describe *this sample*, not all of ICSI. Actions without any cue phrase were not sampled.
 3. Real ICSI has few action items and almost no explicit deadlines (2 of 46 positives have one), so deadline accuracy is

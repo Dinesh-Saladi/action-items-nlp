@@ -56,6 +56,8 @@ Same-meeting windows share topics and speakers; random splitting would leak them
   (meeting times and past times are not deadlines).
 * Several tasks in one window: label the one for the most central turn; windows are spaced >= 4 turns apart to limit this.
 * Random cue-free windows are auto-labeled `false` (spot-check them if you can).
+* For the 330-window expansion batch each annotator works on their own pre-created sheet
+  (`data/ann_A.jsonl`, `ann_B.jsonl`, `ann_C.jsonl`) - see README "Expanding the annotation set".
 
 ## Evaluation beyond the headline numbers
 Each prediction row also records **where every field came from** (`commit_turn`, `person_turn`,

@@ -202,6 +202,9 @@ detectors.
 - `data/candidates.jsonl`: unlabeled candidate contexts.
 - `data/candidates_expansion.jsonl`: 330 further unlabeled windows from 8 new
   meetings, generated for the annotation scale-up (591 contexts total).
+- `data/ann_A.jsonl`, `data/ann_B.jsonl`, `data/ann_C.jsonl`: pre-created
+  annotation sheets for the expansion batch (330 rows each, empty labels), one
+  per annotator for independent labeling and kappa/majority merge.
 - `data/annotated.jsonl`: candidate contexts plus the included labels.
 - `data/train/input.jsonl`: training contexts without labels.
 - `data/train/gold.jsonl`: training labels used by TF-IDF and hybrid training.
@@ -250,7 +253,16 @@ python icsi_candidates.py \
   --out data/candidates.jsonl
 ```
 
-Create manual labels:
+Create manual labels (for the 330-window expansion batch, `data/ann_A.jsonl`,
+`ann_B.jsonl` and `ann_C.jsonl` are pre-created, one per annotator):
+
+```bash
+python annotate.py \
+  --inp data/ann_A.jsonl \
+  --out data/ann_A.jsonl          # rerun to resume; unanswered rows are preserved
+```
+
+For the original 261-context batch:
 
 ```bash
 python annotate.py \
@@ -261,10 +273,12 @@ python annotate.py \
 Merge three annotators before splitting and scoring:
 
 ```bash
+python kappa.py --a data/ann_A.jsonl --b data/ann_B.jsonl
 python merge_annotations.py \
   --files data/ann_A.jsonl data/ann_B.jsonl data/ann_C.jsonl \
-  --out data/annotated.jsonl
-python run_all.py
+  --out data/annotated_expansion.jsonl
+cat data/annotated.jsonl data/annotated_expansion.jsonl > data/annotated_all.jsonl
+python run_all.py --annotated data/annotated_all.jsonl
 ```
 
 ## Validation performed
@@ -283,15 +297,18 @@ mode and `py_compile`. Verified in the `.venv` on Python 3.14.7:
   `Nlp project.md` verbatim: `(Sarah, update the documentation, Friday)` and
   `(Bob, update the documentation, Friday)`.
 - The `.mrt` path (`icsi.py`, `icsi_candidates.py`) and the annotation tools
-  (`annotate.py`, `apply_labels.py`, `kappa.py`, `merge_annotations.py`)
-  are unchanged by this pass.
+  (`apply_labels.py`, `kappa.py`, `merge_annotations.py`) are unchanged by this
+  pass; `annotate.py` now preserves unanswered rows, so each annotator file
+  stays a complete resumable sheet.
 
 ## Known limitations
 
 - The included demo labels were produced by one annotator and are not a
   three-annotator consensus; only 261 of the 591 candidate contexts are
-  labeled so far (330 from 8 new meetings are generated and awaiting
-  annotation, which would bring the set into the plan's 500-1,000 range).
+  labeled so far. The remaining 330 (8 new meetings) are generated, and three
+  blank annotation sheets (`data/ann_A|B|C.jsonl`, 330 rows each) are ready for
+  independent annotation, kappa and majority merge - which would bring the set
+  into the plan's 500-1,000 range.
 - `merge_annotations.py` compares only context IDs present in every annotator
   file, so shared IDs are required for a complete agreement calculation.
 - Candidate generation focuses on cue-centered windows and sampled negatives;

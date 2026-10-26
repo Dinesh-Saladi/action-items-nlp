@@ -33,10 +33,12 @@ if os.path.exists(a.out):
 
 
 def save():
+    # Write EVERY row: answered rows carry their labels, unanswered rows keep their
+    # original (null) labels. This keeps --inp/--out usable as one resumable file
+    # (e.g. three annotators each working on data/ann_A.jsonl, ann_B, ann_C).
     with open(a.out + ".tmp", "w", encoding="utf-8") as f:
         for r in rows:
-            if r["id"] in labels:
-                f.write(json.dumps(labels[r["id"]], ensure_ascii=False) + "\n")
+            f.write(json.dumps(labels.get(r["id"], r), ensure_ascii=False) + "\n")
     os.replace(a.out + ".tmp", a.out)
 
 
