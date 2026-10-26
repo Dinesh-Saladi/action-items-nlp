@@ -129,3 +129,1154 @@
 {"id": "Bns002_n397", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bns002_n538", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bns002_n199", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t23", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t33", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t46", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t56", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t70", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t110", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t123", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t159", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t163", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t167", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t177", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t190", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t197", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t208", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t222", "is_action": true, "person": "me011", "action": "take a closer look at the ATLAS format", "deadline": "NULL"}
+{"id": "Bdb001_t235", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t263", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t291", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t304", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t319", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t326", "is_action": true, "person": "me011", "action": "look at the ATLAS format again", "deadline": "NULL"}
+{"id": "Bdb001_t333", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t341", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t393", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t399", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t406", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t410", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t424", "is_action": true, "person": "me011", "action": "look at the ATLAS format", "deadline": "NULL"}
+{"id": "Bdb001_t433", "is_action": true, "person": "NULL", "action": "look at the ATLAS format", "deadline": "NULL"}
+{"id": "Bdb001_t455", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t488", "is_action": true, "person": "me011", "action": "look at the ATLAS format again", "deadline": "NULL"}
+{"id": "Bdb001_t509", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t513", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t533", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t556", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t579", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t588", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t609", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t613", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_t622", "is_action": true, "person": "fe016", "action": "read the digits", "deadline": "NULL"}
+{"id": "Bdb001_n380", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_n480", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_n51", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_n351", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_n442", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_n105", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_n372", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_n131", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_n418", "is_action": true, "person": "me011", "action": "look at the ATLAS format and let us know what you think", "deadline": "NULL"}
+{"id": "Bdb001_n538", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_n500", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bdb001_n81", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t6", "is_action": true, "person": "NULL", "action": "put your name on the sign-in sheet", "deadline": "NULL"}
+{"id": "Bed003_t11", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t17", "is_action": true, "person": "fe016", "action": "come back up and check if you're still meeting", "deadline": "in about an hour"}
+{"id": "Bed003_t32", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t44", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t51", "is_action": true, "person": "me003", "action": "maximize the window", "deadline": "NULL"}
+{"id": "Bed003_t56", "is_action": true, "person": "me003", "action": "maximize the window", "deadline": "NULL"}
+{"id": "Bed003_t63", "is_action": true, "person": "me003", "action": "get rid of the 'Click to add notes' box", "deadline": "NULL"}
+{"id": "Bed003_t130", "is_action": true, "person": "me003", "action": "switch to the JavaBayes program and talk about the belief net", "deadline": "NULL"}
+{"id": "Bed003_t213", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t229", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t256", "is_action": true, "person": "me003", "action": "set a few nodes and find their probabilities", "deadline": "NULL"}
+{"id": "Bed003_t274", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t303", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t311", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t324", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t387", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t396", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t405", "is_action": true, "person": "me003", "action": "add a 'has door' property", "deadline": "NULL"}
+{"id": "Bed003_t424", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t465", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t478", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t482", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t513", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t574", "is_action": true, "person": "me003", "action": "put the net up again", "deadline": "NULL"}
+{"id": "Bed003_t630", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t638", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t642", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t646", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t653", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t658", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t713", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t746", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t752", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t761", "is_action": true, "person": "NULL", "action": "have a trial run with Fey", "deadline": "Friday afternoon"}
+{"id": "Bed003_t771", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t790", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_t809", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_n203", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_n459", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_n90", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_n676", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_n581", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_n319", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_n117", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_n163", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_n97", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_n739", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed003_n171", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t37", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t42", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t131", "is_action": true, "person": "mn015", "action": "show the draft talk and get input on it", "deadline": "NULL"}
+{"id": "Bed016_t161", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t184", "is_action": true, "person": "mn015", "action": "present a talk at EML", "deadline": "NULL"}
+{"id": "Bed016_t195", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t199", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t214", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t220", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t226", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t236", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t242", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t253", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t259", "is_action": true, "person": "fe004", "action": "email the updated slides", "deadline": "NULL"}
+{"id": "Bed016_t312", "is_action": true, "person": "fe004", "action": "give comments on the presentation separately", "deadline": "NULL"}
+{"id": "Bed016_t321", "is_action": true, "person": "mn015", "action": "add the scalability point about constructions and construal to the proposal", "deadline": "NULL"}
+{"id": "Bed016_t332", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t343", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t351", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t387", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t430", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t540", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_t592", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_n511", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_n373", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_n89", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_n500", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_n178", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed016_n82", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t16", "is_action": true, "person": "fe008", "action": "give an update on the transcription effort and raise the microphone cleanliness issue", "deadline": "NULL"}
+{"id": "Bmr010_t40", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t52", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t122", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t146", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t169", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t173", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t197", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t205", "is_action": true, "person": "me013", "action": "ping them about the format", "deadline": "NULL"}
+{"id": "Bmr010_t238", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t273", "is_action": true, "person": "me011", "action": "contact Brian", "deadline": "NULL"}
+{"id": "Bmr010_t289", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t327", "is_action": true, "person": "me011", "action": "dig through the DragonDictate documentation to find the form", "deadline": "NULL"}
+{"id": "Bmr010_t347", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t352", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t410", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t443", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t465", "is_action": true, "person": "mn017", "action": "hand over the digit form", "deadline": "NULL"}
+{"id": "Bmr010_t490", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t547", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t564", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t576", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t593", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t604", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t627", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t662", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t720", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t734", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t747", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_t801", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_n554", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_n95", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_n794", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_n787", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_n230", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_n697", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_n364", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_n614", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr010_n686", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t33", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t40", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t47", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t51", "is_action": true, "person": "mn017", "action": "ask Jane about her people transcribing the SmartKom data", "deadline": "NULL"}
+{"id": "Bmr026_t57", "is_action": true, "person": "me018", "action": "mail the web page status out to the list", "deadline": "NULL"}
+{"id": "Bmr026_t61", "is_action": true, "person": "me011", "action": "add his meeting status information to the web page", "deadline": "NULL"}
+{"id": "Bmr026_t65", "is_action": true, "person": "me011", "action": "send the transcripts to the participants and bleep them out", "deadline": "NULL"}
+{"id": "Bmr026_t75", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t79", "is_action": true, "person": "me011", "action": "work on the back-end with Don", "deadline": "NULL"}
+{"id": "Bmr026_t109", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t129", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t152", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t156", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t162", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t219", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t240", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t261", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t282", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t292", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t311", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t321", "is_action": true, "person": "me013", "action": "put together a list of what we've done for the annual report", "deadline": "NULL"}
+{"id": "Bmr026_t326", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t331", "is_action": true, "person": "me013", "action": "put together a list of what we've done", "deadline": "NULL"}
+{"id": "Bmr026_t335", "is_action": true, "person": "me013", "action": "have the discussion with Mari about what we've done", "deadline": "the next day"}
+{"id": "Bmr026_t363", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t372", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t460", "is_action": true, "person": "me018", "action": "convert the alignments into label files and train a new net", "deadline": "NULL"}
+{"id": "Bmr026_t467", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t512", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t567", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t579", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_t589", "is_action": true, "person": "me013", "action": "think about the net size (2000 vs 4000 hidden units)", "deadline": "NULL"}
+{"id": "Bmr026_t610", "is_action": true, "person": "me018", "action": "start off with two thousand hidden units", "deadline": "NULL"}
+{"id": "Bmr026_t616", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_n572", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_n10", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_n631", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_n139", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_n539", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_n206", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_n404", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_n528", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_n171", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr026_n146", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t5", "is_action": true, "person": "mn082", "action": "call Adam when ready", "deadline": "in about one hour"}
+{"id": "Bns003_t9", "is_action": true, "person": "mn035", "action": "close the door", "deadline": "NULL"}
+{"id": "Bns003_t17", "is_action": true, "person": "mn082", "action": "set up the second PC in his spare time", "deadline": "NULL"}
+{"id": "Bns003_t22", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t32", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t36", "is_action": true, "person": "mn021", "action": "build and set up a computer (with FreeBSD)", "deadline": "NULL"}
+{"id": "Bns003_t53", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t59", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t65", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t75", "is_action": true, "person": "mn081", "action": "write about his Multicast project on the web page", "deadline": "NULL"}
+{"id": "Bns003_t86", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t125", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t130", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t134", "is_action": true, "person": "mn021", "action": "look at the web page and give feedback", "deadline": "NULL"}
+{"id": "Bns003_t179", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t189", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t210", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t218", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t242", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t252", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t258", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t306", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t318", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t334", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t340", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t345", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t349", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t353", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t358", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t386", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t390", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t396", "is_action": true, "person": "mn082", "action": "write on the proposal and distribute a list of interested people", "deadline": "NULL"}
+{"id": "Bns003_t401", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t405", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t440", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t445", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_t466", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_n278", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_n416", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_n151", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_n98", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_n272", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_n198", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_n104", "is_action": true, "person": "mn021", "action": "read through the web page text and check it", "deadline": "NULL"}
+{"id": "Bns003_n289", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_n296", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_n365", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bns003_n113", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t27", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t32", "is_action": true, "person": "mn007", "action": "talk with Sunil about what they're doing", "deadline": "NULL"}
+{"id": "Bro010_t36", "is_action": true, "person": "mn007", "action": "send Sunil an email about what they are doing", "deadline": "NULL"}
+{"id": "Bro010_t60", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t84", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t88", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t115", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t178", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t210", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t238", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t244", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t259", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t283", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t311", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t315", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t326", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t331", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t379", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t387", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t394", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_t429", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_n52", "is_action": true, "person": "mn007", "action": "add a low-pass filter at 25 Hz", "deadline": "NULL"}
+{"id": "Bro010_n347", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_n46", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_n411", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_n78", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro010_n362", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t4", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t15", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t24", "is_action": true, "person": "me026", "action": "make the plots and put them on his web page", "deadline": "NULL"}
+{"id": "Bro024_t59", "is_action": true, "person": "me026", "action": "look at the choice of the analysis window length", "deadline": "NULL"}
+{"id": "Bro024_t134", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t150", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t155", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t164", "is_action": true, "person": "me006", "action": "do dry runs for the qualifier talk", "deadline": "NULL"}
+{"id": "Bro024_t171", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t245", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t281", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t292", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t307", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t415", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t419", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t424", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t429", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t433", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t439", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t467", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t534", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t542", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t587", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t604", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t653", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t682", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t701", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t721", "is_action": true, "person": "mn052", "action": "try the clean LDA filter", "deadline": "NULL"}
+{"id": "Bro024_t746", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t760", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t770", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_t803", "is_action": true, "person": "NULL", "action": "leave the mike on top of the digit form", "deadline": "NULL"}
+{"id": "Bro024_t807", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_n785", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_n259", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_n729", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_n340", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_n626", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_n499", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_n76", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_n30", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro024_n797", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t3", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t19", "is_action": true, "person": "me011", "action": "read the digit strings first", "deadline": "NULL"}
+{"id": "Bed002_t34", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t64", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t80", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t99", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t110", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t117", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t125", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t134", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t144", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t153", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t180", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t188", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t195", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t201", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t205", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t234", "is_action": true, "person": "me010", "action": "go back to the previous slide", "deadline": "NULL"}
+{"id": "Bed002_t278", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t282", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t288", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t304", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t309", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t313", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t334", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t394", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t404", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t413", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t425", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t443", "is_action": true, "person": "mn015", "action": "show the state of the system", "deadline": "next Monday"}
+{"id": "Bed002_t454", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t472", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_t479", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_n217", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_n358", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_n464", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_n489", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_n378", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_n45", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_n226", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_n87", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed002_n346", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t4", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t9", "is_action": true, "person": "me012", "action": "hit the black square when done (don't hit record)", "deadline": "NULL"}
+{"id": "Bed004_t24", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t33", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t37", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t55", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t65", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t69", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t84", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t88", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t94", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t98", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t102", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t110", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t115", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t133", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t138", "is_action": true, "person": "mn015", "action": "ask Lila about how to put Fey on the payroll", "deadline": "NULL"}
+{"id": "Bed004_t155", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t159", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t164", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t194", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t204", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t209", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t224", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t230", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t234", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t241", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t267", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t298", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t306", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t324", "is_action": true, "person": "mn015", "action": "come up with code for a 'cognitive dispatcher' module", "deadline": "NULL"}
+{"id": "Bed004_t330", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t336", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t348", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_t354", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_n125", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_n186", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_n77", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_n173", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_n143", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_n14", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_n398", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_n372", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_n283", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed004_n246", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t17", "is_action": true, "person": "NULL", "action": "check out social infrastructures for possible subjects", "deadline": "NULL"}
+{"id": "Bed005_t22", "is_action": true, "person": "mn015", "action": "make a first draft of the write-up note and send it", "deadline": "NULL"}
+{"id": "Bed005_t27", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t66", "is_action": true, "person": "mn015", "action": "show the templates", "deadline": "NULL"}
+{"id": "Bed005_t132", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t250", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t266", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t273", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t281", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t301", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t318", "is_action": true, "person": "me010", "action": "come up with a general story about construction grammar", "deadline": "NULL"}
+{"id": "Bed005_t322", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t339", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t347", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t367", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t374", "is_action": true, "person": "mn015", "action": "get a first draft of that (with Johno)", "deadline": "NULL"}
+{"id": "Bed005_t384", "is_action": true, "person": "me010", "action": "dig up some more stuff from Dekai", "deadline": "NULL"}
+{"id": "Bed005_t415", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t428", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t435", "is_action": true, "person": "me012", "action": "take a look at it (the paper)", "deadline": "NULL"}
+{"id": "Bed005_t468", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t479", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t499", "is_action": true, "person": "NULL", "action": "write up a flat file", "deadline": "NULL"}
+{"id": "Bed005_t514", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t523", "is_action": true, "person": "mn015", "action": "show examples from the ontology", "deadline": "next Monday"}
+{"id": "Bed005_t528", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t536", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t546", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t559", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t565", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_t577", "is_action": true, "person": "mn015", "action": "think through getting EVA vectors dynamically out of ontologies", "deadline": "NULL"}
+{"id": "Bed005_t582", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_n105", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_n112", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_n239", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_n95", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_n484", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_n227", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_n141", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed005_n441", "is_action": true, "person": "me010", "action": "ask Bhaskara how much of this JavaBayes supports", "deadline": "NULL"}
+{"id": "Bed005_n256", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t77", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t94", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t104", "is_action": true, "person": "fe046", "action": "send it", "deadline": "NULL"}
+{"id": "Bed006_t114", "is_action": true, "person": "NULL", "action": "tell interested people to write a mail to mn015 or Jerry", "deadline": "NULL"}
+{"id": "Bed006_t123", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t139", "is_action": true, "person": "mn015", "action": "scrape together [the plan]", "deadline": "NULL"}
+{"id": "Bed006_t143", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t194", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t212", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t223", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t259", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t296", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t306", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t316", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t335", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t342", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t369", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t375", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t463", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t472", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t480", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t496", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t513", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t520", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t525", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t542", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t564", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t579", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t604", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t624", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t634", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t652", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t676", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t694", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t706", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t711", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t718", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t745", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t772", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t782", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_t805", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_n284", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_n158", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_n242", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_n453", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_n400", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_n11", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_n25", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_n737", "is_action": true, "person": "me003", "action": "get the binding point with a nice example", "deadline": "NULL"}
+{"id": "Bed006_n416", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_n359", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_n429", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed006_n65", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t0", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t22", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t27", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t31", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t52", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t56", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t88", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t96", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t103", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t110", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t152", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t170", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t213", "is_action": true, "person": "mn015", "action": "move those up about halfway", "deadline": "NULL"}
+{"id": "Bed008_t272", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t282", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t293", "is_action": true, "person": "mn015", "action": "copy it somewhere else", "deadline": "NULL"}
+{"id": "Bed008_t314", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t341", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t354", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t365", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t403", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t410", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t417", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t487", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t496", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t515", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t548", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t557", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t599", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t619", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t627", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t637", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t696", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t721", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_t764", "is_action": true, "person": "me003", "action": "bring up the function thing", "deadline": "NULL"}
+{"id": "Bed008_t768", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_n501", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_n228", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_n685", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_n510", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_n260", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_n477", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_n181", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_n75", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_n320", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed008_n644", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t34", "is_action": true, "person": "NULL", "action": "look over Tilman's shoulder while he changes the grammars to English", "deadline": "NULL"}
+{"id": "Bed009_t65", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t74", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t100", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t136", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t146", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t159", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t163", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t176", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t186", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t193", "is_action": true, "person": "mn048", "action": "put a message into the right place to ask that question", "deadline": "NULL"}
+{"id": "Bed009_t203", "is_action": true, "person": "mn015", "action": "talk to Michael", "deadline": "NULL"}
+{"id": "Bed009_t211", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t216", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t225", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t230", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t241", "is_action": true, "person": "mn048", "action": "go check (about changing the word)", "deadline": "NULL"}
+{"id": "Bed009_t264", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t274", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t299", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t305", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t338", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t397", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t405", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_t418", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_n252", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_n344", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_n128", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_n84", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_n379", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_n424", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed009_n438", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t0", "is_action": true, "person": "fe046", "action": "give me the remote", "deadline": "NULL"}
+{"id": "Bed011_t25", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t29", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t38", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t44", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t50", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t68", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t76", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t88", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t94", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t101", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t109", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t129", "is_action": true, "person": "me045", "action": "start diving into the data", "deadline": "NULL"}
+{"id": "Bed011_t146", "is_action": true, "person": "fe046", "action": "schedule ten people", "deadline": "NULL"}
+{"id": "Bed011_t153", "is_action": true, "person": "fe046", "action": "pick out some stuff (not transcribe all)", "deadline": "NULL"}
+{"id": "Bed011_t160", "is_action": true, "person": "fe046", "action": "make notes pointing to interesting things", "deadline": "NULL"}
+{"id": "Bed011_t190", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t229", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t265", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t332", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t359", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t381", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t396", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t410", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t426", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t461", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t466", "is_action": true, "person": "mn015", "action": "tell you the German tourist data", "deadline": "NULL"}
+{"id": "Bed011_t481", "is_action": true, "person": "mn015", "action": "try to expand the ontology node", "deadline": "NULL"}
+{"id": "Bed011_t503", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t511", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t522", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t542", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t554", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_t558", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_n234", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_n451", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_n489", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_n184", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_n179", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_n213", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_n204", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_n13", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_n534", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed011_n402", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t59", "is_action": true, "person": "me003", "action": "do this in Perl", "deadline": "NULL"}
+{"id": "Bed012_t74", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t86", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t94", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t123", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t132", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t166", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t178", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t185", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t189", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t205", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t219", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t225", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t243", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t278", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t304", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t323", "is_action": true, "person": "mn015", "action": "worry about the ontology interface", "deadline": "NULL"}
+{"id": "Bed012_t336", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t341", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t358", "is_action": true, "person": "mn015", "action": "get it in here", "deadline": "NULL"}
+{"id": "Bed012_t372", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_t405", "is_action": true, "person": "mn015", "action": "send an email with a time suggestion", "deadline": "NULL"}
+{"id": "Bed012_t441", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_n328", "is_action": true, "person": "NULL", "action": "do this the upcoming days", "deadline": "NULL"}
+{"id": "Bed012_n450", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_n111", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_n142", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_n25", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed012_n40", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t9", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t24", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t30", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t56", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t62", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t66", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t83", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t96", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t100", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t126", "is_action": true, "person": "mn015", "action": "ask Eva about the EBayes", "deadline": "NULL"}
+{"id": "Bed013_t133", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t149", "is_action": true, "person": "me003", "action": "work on the SmartKom stuff and help with that tomorrow", "deadline": "NULL"}
+{"id": "Bed013_t169", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t187", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t243", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t288", "is_action": true, "person": "NULL", "action": "look at the web page", "deadline": "NULL"}
+{"id": "Bed013_t308", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t346", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t367", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t375", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t385", "is_action": true, "person": "NULL", "action": "sketch out the details", "deadline": "NULL"}
+{"id": "Bed013_t396", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t403", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t520", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t527", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t539", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t575", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t579", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t606", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t623", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t664", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_t675", "is_action": true, "person": "me045", "action": "look more into that data", "deadline": "NULL"}
+{"id": "Bed013_t684", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_n324", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_n114", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_n490", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_n600", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_n283", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_n236", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_n643", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_n294", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed013_n501", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t46", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t56", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t90", "is_action": true, "person": "NULL", "action": "send me the note", "deadline": "NULL"}
+{"id": "Bed014_t99", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t154", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t166", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t180", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t223", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t236", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t259", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t277", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t284", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t301", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t352", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t356", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t381", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t403", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t410", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t415", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t446", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t451", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t473", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t488", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t547", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t551", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t558", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t570", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t577", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t596", "is_action": true, "person": "mn015", "action": "write it up", "deadline": "NULL"}
+{"id": "Bed014_t601", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t611", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t625", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t629", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t662", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t674", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t688", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t699", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t717", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t726", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t730", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t750", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_t768", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_n755", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_n65", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_n440", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_n295", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_n73", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_n80", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_n363", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_n207", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_n161", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_n432", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_n637", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed014_n372", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t8", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t18", "is_action": true, "person": "fe004", "action": "start on number two on the notation", "deadline": "NULL"}
+{"id": "Bed015_t34", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t49", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t78", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t88", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t111", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t115", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t136", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t168", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t174", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t178", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t192", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t208", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t212", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t233", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t243", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t251", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t259", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t271", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t275", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t279", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t285", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t325", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t336", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t341", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t346", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t359", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t374", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t400", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t404", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t410", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t415", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t421", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t427", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t439", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t509", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t529", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t543", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t567", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t594", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t636", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t658", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t665", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t677", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t694", "is_action": true, "person": "me010", "action": "make a proposal on how to proceed", "deadline": "NULL"}
+{"id": "Bed015_t708", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t730", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t751", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t780", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t784", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t788", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t801", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t809", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t834", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_t842", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n745", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n368", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n199", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n772", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n820", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n125", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n702", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n71", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n297", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n58", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n558", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n315", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n648", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n150", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n760", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bed015_n93", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t11", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t56", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t65", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t94", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t109", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t119", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t126", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t134", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t159", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t165", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t179", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t190", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t208", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t217", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t222", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t259", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t266", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t276", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t294", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t301", "is_action": true, "person": "me011", "action": "send mail to speech local", "deadline": "NULL"}
+{"id": "Bmr001_t329", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t358", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t378", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t399", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t409", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t417", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t423", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t445", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t473", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t486", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_t492", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_n234", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_n429", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_n456", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_n505", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_n142", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_n28", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_n5", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_n71", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr001_n313", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t11", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t24", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t28", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t52", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t71", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t75", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t84", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t145", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t159", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t199", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t222", "is_action": true, "person": "fe008", "action": "provide word-level transcripts", "deadline": "NULL"}
+{"id": "Bmr002_t228", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t237", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t243", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t275", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t296", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t309", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t331", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t335", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t341", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t347", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t351", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t364", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t388", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t394", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t437", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t442", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t446", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t450", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t465", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t508", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t525", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t534", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t540", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t569", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t606", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t614", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t645", "is_action": true, "person": "me011", "action": "check it and try to download it", "deadline": "NULL"}
+{"id": "Bmr002_t659", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t700", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t720", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t774", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t793", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t813", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t822", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t858", "is_action": true, "person": "me011", "action": "go download 'Transcriber' and look at it", "deadline": "NULL"}
+{"id": "Bmr002_t862", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_t868", "is_action": true, "person": "me011", "action": "try to get those as well", "deadline": "NULL"}
+{"id": "Bmr002_t928", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n899", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n289", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n840", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n154", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n131", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n494", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n139", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n93", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n580", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n169", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n301", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n375", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n215", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr002_n640", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t0", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t7", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t27", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t35", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t88", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t92", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t104", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t128", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t135", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t163", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t186", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t232", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t274", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t282", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t289", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t295", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t311", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t319", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t331", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t340", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t346", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t357", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t367", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t379", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t397", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t449", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t470", "is_action": true, "person": "NULL", "action": "get it so that it detects volume and inserts a marker", "deadline": "NULL"}
+{"id": "Bmr003_t494", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t498", "is_action": true, "person": "fe008", "action": "do that tomorrow", "deadline": "NULL"}
+{"id": "Bmr003_t516", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t559", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t593", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t619", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t641", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t689", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t694", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t698", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t702", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t773", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t809", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t829", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t851", "is_action": true, "person": "me011", "action": "rewrite the mix tool", "deadline": "NULL"}
+{"id": "Bmr003_t868", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t876", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t885", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t889", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t896", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t930", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t972", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t994", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1009", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1017", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1045", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1080", "is_action": true, "person": "me011", "action": "put it together", "deadline": "NULL"}
+{"id": "Bmr003_t1084", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1111", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1125", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1162", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1194", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1219", "is_action": true, "person": "me028", "action": "build a cabinet", "deadline": "NULL"}
+{"id": "Bmr003_t1272", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1302", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1328", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1341", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1359", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1369", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1382", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1405", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1415", "is_action": true, "person": "me011", "action": "remember to bring M_ and M_'s next time", "deadline": "NULL"}
+{"id": "Bmr003_t1432", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1444", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1454", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_t1472", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n1095", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n1285", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n148", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n1181", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n261", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n538", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n220", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n304", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n97", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n154", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n1031", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n1188", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n71", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n838", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n741", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n421", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n50", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n1307", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n1353", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n624", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr003_n1315", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t2", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t7", "is_action": true, "person": "me011", "action": "collect the digit forms and write it down", "deadline": "NULL"}
+{"id": "Bmr005_t11", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t43", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t53", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t58", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t113", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t144", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t153", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t158", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t162", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t186", "is_action": true, "person": "mn005", "action": "label the different acoustic", "deadline": "NULL"}
+{"id": "Bmr005_t245", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t305", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t332", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t336", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t359", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t372", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t398", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t424", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t432", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t463", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t478", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t514", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t523", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t534", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t593", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t613", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t641", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t668", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t687", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t692", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t697", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t702", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t708", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t715", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t721", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t740", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t769", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t802", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_t810", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_n733", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_n179", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_n749", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_n234", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_n786", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_n682", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_n755", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_n132", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_n500", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_n662", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_n780", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr005_n198", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t7", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t16", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t29", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t37", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t44", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t53", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t64", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t71", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t101", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t120", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t162", "is_action": true, "person": "fe016", "action": "go up there and record the meeting", "deadline": "NULL"}
+{"id": "Bmr006_t195", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t241", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t253", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t273", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t282", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t334", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t359", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t383", "is_action": true, "person": "me011", "action": "archive it and delete the files", "deadline": "NULL"}
+{"id": "Bmr006_t440", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t457", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t495", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t515", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t524", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t638", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t646", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t682", "is_action": true, "person": "mn005", "action": "include the differential derivatives", "deadline": "NULL"}
+{"id": "Bmr006_t687", "is_action": true, "person": "me013", "action": "take just a few features", "deadline": "NULL"}
+{"id": "Bmr006_t723", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t768", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t812", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t853", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t893", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t926", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1030", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1043", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1066", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1072", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1083", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1087", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1094", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1099", "is_action": true, "person": "fe008", "action": "give you the short version", "deadline": "NULL"}
+{"id": "Bmr006_t1128", "is_action": true, "person": "fe008", "action": "report on next time", "deadline": "NULL"}
+{"id": "Bmr006_t1157", "is_action": true, "person": "me013", "action": "make a brief comment about what we're covering", "deadline": "NULL"}
+{"id": "Bmr006_t1188", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1210", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1221", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1230", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1249", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1264", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1272", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1310", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1323", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1327", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_t1368", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n620", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n171", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n596", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n601", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n950", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n931", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n1297", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n631", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n1281", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n87", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n1346", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n1356", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n487", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n328", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n807", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr006_n1172", "is_action": false, "person": null, "action": null, "deadline": null}

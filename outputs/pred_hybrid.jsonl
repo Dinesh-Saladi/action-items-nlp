@@ -1,6 +1,6 @@
 {"id": "Bmr007_t12", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t25", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_t30", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_t30", "is_action": true, "person": "me013", "action": "run through it also and see if someone thinks it's inaccurate or insufficient", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null, "mentioned_people": ["Adam", "Jane"]}
 {"id": "Bmr007_t34", "is_action": true, "person": "me013", "action": "go through that", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
 {"id": "Bmr007_t38", "is_action": true, "person": "me013", "action": "chat with you about that off-line", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
 {"id": "Bmr007_t42", "is_action": false, "person": null, "action": null, "deadline": null}
@@ -40,12 +40,12 @@
 {"id": "Bmr007_t791", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t820", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t832", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_t840", "is_action": true, "person": "NULL", "action": "done that", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null}
-{"id": "Bmr007_t845", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_t855", "is_action": true, "person": "fe016", "action": "NULL", "deadline": "NULL", "commit_turn": 3, "person_turn": 3, "action_turn": null, "deadline_turn": null}
+{"id": "Bmr007_t840", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_t845", "is_action": true, "person": "NULL", "action": "send me thoughts for an agenda", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null, "mentioned_people": ["Agenda"]}
+{"id": "Bmr007_t855", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t868", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t879", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_t883", "is_action": true, "person": "fe016", "action": "wear it", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
+{"id": "Bmr007_t883", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_n665", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_n197", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_n544", "is_action": false, "person": null, "action": null, "deadline": null}
@@ -60,7 +60,7 @@
 {"id": "Bmr007_n298", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_n800", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_n374", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bro018_t1", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro018_t1", "is_action": true, "person": "fn002", "action": "try to explain the thing that I did this this week during this week", "deadline": "NULL", "commit_turn": 1, "person_turn": 1, "action_turn": 1, "deadline_turn": null}
 {"id": "Bro018_t29", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bro018_t41", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bro018_t70", "is_action": false, "person": null, "action": null, "deadline": null}

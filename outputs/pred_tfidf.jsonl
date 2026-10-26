@@ -1,12 +1,12 @@
-{"id": "Bmr007_t12", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_t25", "is_action": true, "person": "NULL", "action": "go, and Right", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null}
-{"id": "Bmr007_t30", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_t12", "is_action": true, "person": "NULL", "action": "do so", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null}
+{"id": "Bmr007_t25", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_t30", "is_action": true, "person": "me013", "action": "run through it also and see if someone thinks it's inaccurate or insufficient", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null, "mentioned_people": ["Adam", "Jane"]}
 {"id": "Bmr007_t34", "is_action": true, "person": "me013", "action": "go through that", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
 {"id": "Bmr007_t38", "is_action": true, "person": "me013", "action": "chat with you about that off-line", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
 {"id": "Bmr007_t42", "is_action": true, "person": "fe008", "action": "hand these out", "deadline": "NULL", "commit_turn": 3, "person_turn": 3, "action_turn": 3, "deadline_turn": null, "mentioned_people": ["Adam", "Jane"]}
 {"id": "Bmr007_t61", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t101", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_t143", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_t143", "is_action": true, "person": "mn005", "action": "do the the study of the with the with the program with the the different, the, nnn, distribution of the duration of the overlaps", "deadline": "NULL", "commit_turn": 4, "person_turn": 4, "action_turn": 4, "deadline_turn": null}
 {"id": "Bmr007_t158", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t171", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t192", "is_action": false, "person": null, "action": null, "deadline": null}
@@ -19,75 +19,75 @@
 {"id": "Bmr007_t390", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t404", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t414", "is_action": true, "person": "NULL", "action": "try to record some two-person meetings or something", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null}
-{"id": "Bmr007_t434", "is_action": true, "person": "NULL", "action": "set up for it", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null}
+{"id": "Bmr007_t434", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t471", "is_action": true, "person": "me011", "action": "NULL", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": null, "deadline_turn": null}
-{"id": "Bmr007_t490", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_t529", "is_action": true, "person": "me011", "action": "run into the room", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
-{"id": "Bmr007_t575", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_t490", "is_action": true, "person": "NULL", "action": "keep the chairs in the same like here", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 4, "deadline_turn": null}
+{"id": "Bmr007_t529", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_t575", "is_action": true, "person": "mn005", "action": "try", "deadline": "NULL", "commit_turn": 3, "person_turn": 3, "action_turn": 2, "deadline_turn": null}
 {"id": "Bmr007_t655", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t681", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t720", "is_action": true, "person": "NULL", "action": "try a a meeting or two with the blindfolds, at least of this meeting that we have lots of recordings of", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null}
-{"id": "Bmr007_t725", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_t729", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_t725", "is_action": true, "person": "fe008", "action": "say I made barriers for", "deadline": "NULL", "commit_turn": 4, "person_turn": 4, "action_turn": 4, "deadline_turn": null, "mentioned_people": ["Chuck"]}
+{"id": "Bmr007_t729", "is_action": true, "person": "fe008", "action": "say I made barriers for", "deadline": "NULL", "commit_turn": 0, "person_turn": 0, "action_turn": 0, "deadline_turn": null}
 {"id": "Bmr007_t737", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t743", "is_action": true, "person": "me018", "action": "peeking", "deadline": "NULL", "commit_turn": 3, "person_turn": 3, "action_turn": 3, "deadline_turn": null}
 {"id": "Bmr007_t749", "is_action": true, "person": "me013", "action": "NULL", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": null, "deadline_turn": null}
-{"id": "Bmr007_t757", "is_action": true, "person": "NULL", "action": "mail me the corrections or suggestions for changing I I don't want to make this twice it's length", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null, "mentioned_people": ["Lokendra"]}
+{"id": "Bmr007_t757", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t761", "is_action": true, "person": "me011", "action": "send you a sentence that doesn't just say \"a bunch of\"", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
 {"id": "Bmr007_t767", "is_action": true, "person": "me011", "action": "try to phrase it in passive voice", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
 {"id": "Bmr007_t772", "is_action": true, "person": "mn014", "action": "tell us about all the work you've done on this project in the last, last three months", "deadline": "NULL", "commit_turn": 3, "person_turn": 3, "action_turn": 2, "deadline_turn": null, "mentioned_people": ["Jane"]}
 {"id": "Bmr007_t784", "is_action": true, "person": "NULL", "action": "want to just totally excise it", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null}
 {"id": "Bmr007_t791", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_t820", "is_action": true, "person": "NULL", "action": "NULL", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": null, "deadline_turn": null}
+{"id": "Bmr007_t820", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t832", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_t840", "is_action": true, "person": "NULL", "action": "done that", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null}
 {"id": "Bmr007_t845", "is_action": true, "person": "NULL", "action": "send me thoughts for an agenda", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null, "mentioned_people": ["Agenda"]}
 {"id": "Bmr007_t855", "is_action": true, "person": "fe016", "action": "NULL", "deadline": "NULL", "commit_turn": 3, "person_turn": 3, "action_turn": null, "deadline_turn": null}
-{"id": "Bmr007_t868", "is_action": true, "person": "NULL", "action": "hand but it", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null}
-{"id": "Bmr007_t879", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_t883", "is_action": true, "person": "fe016", "action": "wear it", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
-{"id": "Bmr007_n665", "is_action": true, "person": "NULL", "action": "NULL", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": null, "deadline_turn": null}
-{"id": "Bmr007_n197", "is_action": true, "person": "NULL", "action": "NULL", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": null, "deadline_turn": null}
-{"id": "Bmr007_n544", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_t868", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_t879", "is_action": true, "person": "NULL", "action": "NULL", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": null, "deadline_turn": null}
+{"id": "Bmr007_t883", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_n665", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_n197", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_n544", "is_action": true, "person": "NULL", "action": "NULL", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": null, "deadline_turn": null, "mentioned_people": ["Adam"]}
 {"id": "Bmr007_n638", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_n76", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_n337", "is_action": true, "person": "NULL", "action": "NULL", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": null, "deadline_turn": null}
+{"id": "Bmr007_n337", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_n107", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_n618", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_n618", "is_action": true, "person": "NULL", "action": "NULL", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": null, "deadline_turn": null}
 {"id": "Bmr007_n623", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_n247", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_n384", "is_action": true, "person": "NULL", "action": "NULL", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": null, "deadline_turn": null}
-{"id": "Bmr007_n298", "is_action": true, "person": "NULL", "action": "NULL", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": null, "deadline_turn": null}
+{"id": "Bmr007_n384", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_n298", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bmr007_n800", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bmr007_n374", "is_action": true, "person": "NULL", "action": "NULL", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": null, "deadline_turn": null}
-{"id": "Bro018_t1", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bmr007_n374", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro018_t1", "is_action": true, "person": "fn002", "action": "try to explain the thing that I did this this week during this week", "deadline": "NULL", "commit_turn": 1, "person_turn": 1, "action_turn": 1, "deadline_turn": null}
 {"id": "Bro018_t29", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bro018_t41", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bro018_t70", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bro018_t94", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro018_t94", "is_action": true, "person": "NULL", "action": "be in nineties somewhere", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 1, "deadline_turn": null}
 {"id": "Bro018_t112", "is_action": true, "person": "NULL", "action": "do then", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null}
 {"id": "Bro018_t120", "is_action": true, "person": "NULL", "action": "show that", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 1, "deadline_turn": null}
 {"id": "Bro018_t151", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bro018_t158", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bro018_t169", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bro018_t173", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bro018_t178", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bro018_t207", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bro018_t211", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro018_t178", "is_action": true, "person": "fn002", "action": "look", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
+{"id": "Bro018_t207", "is_action": true, "person": "me013", "action": "hold that thought", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null, "mentioned_people": ["Jordan"]}
+{"id": "Bro018_t211", "is_action": true, "person": "NULL", "action": "be able to find out in a pretty straightforward way whether you have a sufficient set of events to to do the kind of level of of classification of phones that you'd like", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 3, "deadline_turn": null}
 {"id": "Bro018_t234", "is_action": true, "person": "me018", "action": "verify that you've chosen features that", "deadline": "NULL", "commit_turn": 3, "person_turn": 3, "action_turn": 2, "deadline_turn": null}
-{"id": "Bro018_t239", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro018_t239", "is_action": true, "person": "NULL", "action": "NULL", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": null, "deadline_turn": null, "mentioned_people": ["King", "Taylor"]}
 {"id": "Bro018_t300", "is_action": true, "person": "me006", "action": "show you", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
-{"id": "Bro018_t357", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro018_t357", "is_action": true, "person": "NULL", "action": "look back through my my email from him", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null, "mentioned_people": ["Andreas"]}
 {"id": "Bro018_t371", "is_action": false, "person": null, "action": null, "deadline": null}
-{"id": "Bro018_t391", "is_action": true, "person": "NULL", "action": "specify a different number of features different number of filters, I think", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 2, "deadline_turn": null}
+{"id": "Bro018_t391", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bro018_t407", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bro018_t475", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bro018_t481", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bro018_t502", "is_action": true, "person": "me013", "action": "imagine getting that\"", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
 {"id": "Bro018_t507", "is_action": true, "person": "me013", "action": "run", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
-{"id": "Bro018_t511", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro018_t511", "is_action": true, "person": "me013", "action": "go first, come", "deadline": "NULL", "commit_turn": 2, "person_turn": 2, "action_turn": 2, "deadline_turn": null}
 {"id": "Bro018_n326", "is_action": true, "person": "NULL", "action": "do on his class project", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": 0, "deadline_turn": null}
-{"id": "Bro018_n62", "is_action": false, "person": null, "action": null, "deadline": null}
+{"id": "Bro018_n62", "is_action": true, "person": "NULL", "action": "NULL", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": null, "deadline_turn": null}
 {"id": "Bro018_n11", "is_action": false, "person": null, "action": null, "deadline": null}
 {"id": "Bro018_n312", "is_action": true, "person": "NULL", "action": "NULL", "deadline": "NULL", "commit_turn": null, "person_turn": null, "action_turn": null, "deadline_turn": null}
 {"id": "Bro018_n247", "is_action": false, "person": null, "action": null, "deadline": null}

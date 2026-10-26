@@ -1,14 +1,12 @@
 id,error_type,failed_stage,gold_person,gold_action,gold_deadline,pred_person,pred_action,pred_deadline
 Bmr007_t12,missed_action_item,detect,NULL,sign the consent form,NULL,,,
+Bmr007_t30,false_positive,detect,,,,me013,run through it also and see if someone thinks it's inaccurate or insufficient,NULL
 Bmr007_t143,missed_action_item,detect,mn005,average the duration of the overlaps,NULL,,,
 Bmr007_t471,wrong_action,action_extract,me011,put the seat number on the next set of forms,NULL,me011,NULL,NULL
 Bmr007_t490,missed_action_item,detect,me011,put little labels with the seat number on all the chairs,NULL,,,
 Bmr007_t743,missed_action_item,detect,NULL,work on the human subjects form,NULL,,,
-Bmr007_t840,false_positive,detect,,,,NULL,done that,NULL
-Bmr007_t845,missed_action_item,detect,NULL,send me thoughts for an agenda,NULL,,,
-Bmr007_t855,false_positive,detect,,,,fe016,NULL,NULL
 Bmr007_t879,missed_action_item,detect,fe008,take a look at the backchannels,NULL,,,
-Bmr007_t883,false_positive,detect,,,,fe016,wear it,NULL
+Bro018_t1,false_positive,detect,,,,fn002,try to explain the thing that I did this this week during this week,NULL
 Bro018_t112,missed_action_item,detect,fn002,try adding together the probabilities,NULL,,,
 Bro018_t120,missed_action_item,detect,fn002,add up the probabilities,NULL,,,
 Bro018_t151,missed_action_item,detect,fn002,study the France Telecom proposal,NULL,,,
