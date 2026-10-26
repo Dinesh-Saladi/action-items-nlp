@@ -61,8 +61,8 @@ end-to-end number.
 | detector | n detected | person | action (overlap >= 0.5) | deadline |
 |---|---|---|---|---|
 | rule | 10 | 1.000 | 0.600 | 1.000 |
-| tfidf | 15 | 0.643 | 0.429 | 1.000 |
-| hybrid | 9 | 1.000 | 0.833 | 1.000 |
+| tfidf | 15 | 0.667 | 0.400 | 1.000 |
+| hybrid | 9 | 1.000 | 0.667 | 1.000 |
 | bert | 11 | 0.818 | 0.545 | 1.000 |
 
 ## Ensemble check
