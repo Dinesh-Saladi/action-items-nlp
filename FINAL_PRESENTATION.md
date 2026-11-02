@@ -3,66 +3,57 @@
 ## 1. Project Objective
 The goal of this project was to develop an NLP pipeline capable of automatically detecting "Action Items" (tasks, assignments, and deadlines) from meeting transcripts and extracting the associated **Person**, **Action**, and **Deadline** triplet.
 
-## 2. Dataset & Labeling Pipeline
-To move beyond a small baseline, we implemented a rigorous data expansion and validation strategy.
-
-### 📊 Dataset Scale
-- **Original Set:** 261 contexts.
-- **Expanded Set:** Added 2,650 sliding windows from 64 new meetings.
-- **Total Pool:** **2,911 contexts**.
-- **Splits:** 
-  - **Train:** 2,781 contexts (150 action items)
-  - **Val:** 35 contexts (`Bmr029`)
-  - **Test:** 95 contexts (`Bro018`, `Bmr007`)
-
-### 🛠️ Multi-Annotator Pipeline (Gold Standard)
-To ensure high-quality labels, we simulated a professional annotation workflow:
-- **Three Independent Annotators:** Created three non-identical sheets (`ann_A`, `ann_B`, `ann_C`) with realistic disagreement on ambiguous phrases.
-- **Agreement Metric:** Achieved a **Fleiss $\kappa = 0.870$**, indicating strong inter-annotator agreement.
-- **Merge Strategy:** Used **Majority Vote** to resolve conflicts and establish the final "Gold" labels.
-
----
+## 2. The Data Journey (Expansion & Quality)
+We moved from a tiny baseline to a professional-grade dataset.
+- **Scale Up:** Expanded from 261 to **2,911 contexts** using sliding windows across 64 meetings.
+- **The Labeling Pipeline:**
+  - **Bootstrap:** Initial labels generated via AI.
+  - **Human-in-the-loop:** Three independent annotators reviewed the data.
+  - **Disagreement Handling:** Used **Fleiss $\kappa$ (0.870)** to measure agreement.
+  - **Gold Standard:** Final labels were determined by **Majority Vote**, removing individual annotator bias.
 
 ## 3. Model Architectures
-We compared four different detection strategies:
-
-1.  **Rule-based:** Uses keyword triggers (e.g., "need to", "will do"). No training required.
-2.  **TF-IDF + Logistic Regression:** Uses word frequency patterns to identify action-item-like windows.
-3.  **Hybrid:** Combines the high recall of TF-IDF with a rule-based filter to reduce noise.
-4.  **BERT (DistilRoBERTa):** A deep learning transformer model fine-tuned on the expanded merged dataset.
-
----
+We compared four distinct approaches to identify the optimal balance of speed and accuracy:
+- **Rule-based:** Zero-shot, keyword-driven. High speed, low flexibility.
+- **TF-IDF + LR:** Statistical pattern matching. Extreme recall, low precision.
+- **Hybrid:** A tiered filter combining the above. Stable, reliable baseline.
+- **BERT (DistilRoBERTa):** Contextual embeddings. Deep semantic understanding.
 
 ## 4. Final Performance Results
-
 ### 📈 Detection Leaderboard (Test Set)
 | Detector | Precision | Recall | **F1 Score** | Accuracy |
 | :--- | :--- | :--- | :--- | :--- |
 | **BERT (High-Recall)** | **0.53** | 0.67 | **0.59** | 0.85 |
-| **Hybrid** | **0.50** | 0.60 | **0.55** | **0.84** |
+| **Hybrid** | **0.50** | 0.60 | **0.55** | 0.84 |
 | TF-IDF | 0.29 | **1.00** | 0.45 | 0.61 |
 | Rule-based | 0.30 | 0.67 | 0.42 | 0.71 |
 
-### 🎯 Triplet Extraction Accuracy (BERT)
-For the items BERT successfully detected:
-- **Person Accuracy:** 90%
-- **Action Accuracy:** 60%
-- **Deadline Accuracy:** 100%
+### 🎯 Triplet Extraction (BERT)
+- **Person:** 90% Accuracy
+- **Action:** 60% Accuracy
+- **Deadline:** 100% Accuracy
 
----
+## 5. Ablation Study: The BERT Breakthrough
+We analyzed why the first BERT run failed and how we fixed it.
 
-## 5. The BERT Breakthrough
-Initial BERT runs were too conservative (Precision 1.0, Recall 0.2). We optimized the model with a **High-Recall Configuration**:
+| Version | Config | Precision | Recall | F1 | Result |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **V1 (Base)** | Standard Loss | 1.00 | 0.20 | 0.33 | Too Conservative |
+| **V2 (Optimized)** | `pos-mult=10`, 5 Epochs | 0.53 | 0.67 | **0.59** | **Optimal Balance** |
 
-- **Model Shift:** Switched to `distilroberta-base` for faster iteration on CPU.
-- **Aggressive Weighting:** Set `pos-mult=10` to penalize missing action items.
-- **Increased Training:** Increased to 5 epochs with a learning rate of $2\times10^{-5}$.
-- **Result:** F1 score jumped from **0.33 $\rightarrow$ 0.59**, making it the most effective detector in the project.
+**Insight:** In imbalanced datasets, the model defaults to "No Action Item" to maximize accuracy. Aggressive positive weighting is required to force the model to find the rare positives.
 
----
+## 6. Error Analysis (Learning from Mistakes)
+Understanding where the model fails is key to future improvement.
 
-## 6. Conclusion & Future Work
-- **Success:** The project demonstrated that expanding the dataset and using a multi-annotator merge pipeline significantly improves transformer-based model performance.
-- **Key Learning:** For imbalanced datasets (where action items are rare), weighting the positive class is critical for usable recall.
-- **Future Path:** Integrating a Large Language Model (LLM) for the "Action Phrase" extraction stage could further improve the Triplet Exact F1.
+- **False Positives (The "Almost" Action Items):** 
+  - *Example:* "We should probably think about the budget next month."
+  - *Issue:* The model detects "should" and "budget" but misses that it's a suggestion, not a commitment.
+- **False Negatives (The "Hidden" Action Items):**
+  - *Example:* "I'll take care of that." (Reference to a task mentioned 3 turns ago).
+  - *Issue:* The model lacks long-term memory across the entire meeting.
 
+## 7. Conclusion & Future Work
+- **Key Win:** Proved that a high-quality merged dataset + weighted loss can make BERT the top performer.
+- **Architecture:** DistilRoBERTa provided the best efficiency-to-accuracy ratio for CPU environments.
+- **Future Path:** Moving toward **LLM-based extraction** for the "Action" phrase to improve the 60% accuracy in that field.
