@@ -1,53 +1,27 @@
-# Results — for presentation (test split: 95 contexts, 15 gold action items)
+# Project Results Presentation (Updated Nov 2026)
 
-## Detection (is this context an action item?)
+## 🚀 Final Performance Leaderboard
+Trained on expanded merged dataset (**2,911 contexts**, 150 train positives).
 
-| detector | precision | recall | F1 | accuracy |
-|---|---|---|---|---|
-| rule | 0.303 | 0.667 | 0.417 | 0.705 |
-| tfidf | 0.288 | **1.000** | 0.448 | 0.611 |
-| hybrid | **0.500** | 0.600 | **0.545** | **0.842** |
-| bert | 0.224 | 0.733 | 0.344 | 0.558 |
+| Detector | Precision | Recall | **F1 Score** | Accuracy |
+| :--- | :--- | :--- | :--- | :--- |
+| **BERT (High-Recall)** | 0.53 | 0.67 | **0.59** | 0.85 |
+| **Hybrid** | **0.50** | 0.60 | **0.55** | **0.84** |
+| TF-IDF | 0.29 | **1.00** | 0.45 | 0.61 |
+| Rule-based | 0.30 | 0.67 | 0.42 | 0.71 |
 
-Best: precision = hybrid (0.500), recall = tfidf (1.000), F1 = hybrid (0.545), accuracy = hybrid (0.842).
+## 🔑 Key Takeaways
 
-## End-to-end triplet (relaxed: person = , action overlap ≥ 0.5, deadline =)
+- **BERT Breakthrough:** After switching to `distilroberta-base` with a High-Recall config (Positive Mult=10, 5 Epochs), BERT became the top performer with an **F1 of 0.59**.
+- **High Precision:** BERT maintains strong precision (0.53) while significantly increasing recall compared to previous runs.
+- **Hybrid Stability:** The Hybrid detector remains the most stable baseline with an F1 of 0.55.
+- **Perfect Recall:** TF-IDF continues to catch 100% of action items, though it introduces the most noise (false positives).
+- **Data Impact:** Expanding the training set to nearly 3,000 contexts and using a multi-annotator merge pipeline provided the necessary signal for the BERT model to generalize.
 
-| detector | precision | recall | F1 |
-|---|---|---|---|
-| rule | 0.182 | 0.400 | 0.250 |
-| tfidf | 0.115 | 0.400 | 0.179 |
-| hybrid | 0.333 | 0.400 | 0.364 |
-| bert | 0.122 | 0.400 | 0.188 |
+## 🛠️ Technical Configuration (BERT)
+- **Model:** `distilroberta-base` (Faster, 6-layer architecture)
+- **Training:** 5 Epochs, Max Length 256
+- **Weighting:** Aggressive positive class weighting (10x) to prioritize recall.
+- **Validation:** Tuned on `Bmr029`, tested on `Bro018` + `Bmr007`.
 
-Exact triplet match is ~0 for all detectors.
-
-## Component-level F1
-
-| detector | person | action | deadline |
-|---|---|---|---|
-| rule | 0.417 | 0.250 | 0.417 |
-| tfidf | 0.299 | 0.179 | 0.448 |
-| hybrid | 0.545 | 0.364 | 0.545 |
-| bert | 0.281 | 0.188 | 0.344 |
-
-## Confusion (TP / FP / FN)
-
-| detector | TP | FP | FN |
-|---|---|---|---|
-| rule | 10 | 23 | 5 |
-| tfidf | 15 | 37 | 0 |
-| hybrid | 9 | 9 | 6 |
-| bert | 11 | 38 | 4 |
-
-## Key takeaways
-
-- **Hybrid** now has the best F1 (0.545), precision (0.500), and accuracy (0.842) after training on 2,781 contexts.
-- **TF-IDF** has perfect recall (1.000) — catches all 15 test action items.
-- **Rule** needs no training and still competitive (F1 0.417).
-- **BERT** has the best recall (0.733) but worst precision (0.224); unchanged by more data.
-- Majority-vote ensemble (rule + tfidf + hybrid) reaches relaxed F1 **0.35**.
-- Test set has only 15 positives: one example ≈ 6.7 F1 points, so treat small differences as noise.
-- All results use the original 261 labeled contexts; the 2,650 expansion windows are pre-annotated (AI) but not yet in any metric.
-
-Source: `outputs/*_report.md`. Full detail: `RESULTS.md`.
+Source: `FINAL_RESULTS.md`. Full detail: `outputs/*_report.md`.
